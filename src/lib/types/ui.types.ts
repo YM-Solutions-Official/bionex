@@ -50,8 +50,7 @@ export interface ServiceCardProps extends CardProps {
 }
 
 /** Input component props interface */
-export interface InputProps
-  extends React.InputHTMLAttributes<HTMLInputElement> {
+export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   variant?: 'default' | 'ghost'
   error?: string
   label?: string

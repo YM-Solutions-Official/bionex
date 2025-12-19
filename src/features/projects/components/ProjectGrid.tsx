@@ -1,13 +1,17 @@
-import ProjectCard from './Project-Card'
-import { Link } from '@tanstack/react-router'
-import { projectsData } from '@/lib/projects'
+/**
+ * @file features/projects/components/ProjectGrid.tsx
+ * @description Project portfolio grid display
+ */
 
-export default function Project() {
+import { PROJECTS_DATA } from '@/lib/constants/projects.constants'
+import ProjectCard from './ProjectCard'
+
+/**
+ * Displays project portfolio in a responsive grid
+ */
+export function ProjectGrid() {
   return (
-    <section
-      id="projects"
-      className="bg-white py-16 font-sans text-slate-900 sm:py-20"
-    >
+    <section className="bg-white py-16 font-sans text-slate-900 sm:py-20">
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-10 px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-3xl text-center">
@@ -22,18 +26,10 @@ export default function Project() {
 
         {/* Cards */}
         <div className="flex w-full flex-wrap items-stretch justify-center gap-6 lg:gap-8">
-          {projectsData.map((project) => (
+          {PROJECTS_DATA.map((project: any) => (
             <ProjectCard key={project.title} {...project} />
           ))}
         </div>
-
-        {/* CTA */}
-        <Link
-          to="/projects"
-          className="inline-flex items-center rounded-xl bg-[#00A676] px-8 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_0_12px_rgba(0,166,118,0.6)]"
-        >
-          View all projects
-        </Link>
       </div>
     </section>
   )

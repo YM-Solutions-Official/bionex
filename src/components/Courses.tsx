@@ -40,11 +40,7 @@ export default function Courses() {
           {coursesData.map((course, idx) => {
             const Icon = course.icon
             return (
-              <Card
-                key={idx}
-                variant="default"
-                hover
-              >
+              <Card key={idx} variant="default" hover>
                 <div
                   className={`mb-5 inline-flex h-11 w-11 items-center justify-center rounded-xl ${course.bg} group-hover:scale-105 transition-transform`}
                 >

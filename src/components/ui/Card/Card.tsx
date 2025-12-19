@@ -35,7 +35,7 @@ export function Card({
     variantClass,
     hoverClass,
     'transition-all duration-200',
-    className
+    className,
   )
 
   return (

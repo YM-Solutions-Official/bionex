@@ -39,7 +39,7 @@ export function Badge({
         'inline-flex items-center rounded-full font-medium',
         BADGE_VARIANTS[variant],
         BADGE_SIZES[size],
-        className
+        className,
       )}
     >
       {children}

@@ -32,7 +32,9 @@ export function Input({
       ? 'border-transparent bg-slate-100 focus:border-emerald-500 focus:ring-emerald-200'
       : 'border-slate-200 bg-white focus:border-emerald-500 focus:ring-emerald-200'
 
-  const errorClass = error ? 'border-red-500 focus:border-red-500 focus:ring-red-200' : ''
+  const errorClass = error
+    ? 'border-red-500 focus:border-red-500 focus:ring-red-200'
+    : ''
 
   const combinedClassName =
     `${baseClasses} ${variantClass} ${errorClass} ${className}`.trim()
@@ -45,12 +47,8 @@ export function Input({
         </label>
       )}
       <input {...props} className={combinedClassName} />
-      {hint && (
-        <p className="mt-1 text-xs text-slate-500">{hint}</p>
-      )}
-      {error && (
-        <p className="mt-1 text-xs text-red-600">{error}</p>
-      )}
+      {hint && <p className="mt-1 text-xs text-slate-500">{hint}</p>}
+      {error && <p className="mt-1 text-xs text-red-600">{error}</p>}
     </div>
   )
 }

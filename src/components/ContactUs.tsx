@@ -2,7 +2,15 @@ import { CheckCircle2, Mail, MapPin, Phone } from 'lucide-react'
 import { reasons } from '@/lib/contact'
 import { Card } from './ui/Card'
 
-const ContactItem = ({ icon: Icon, title, detail }: { icon: any; title: string; detail: string }) => (
+const ContactItem = ({
+  icon: Icon,
+  title,
+  detail,
+}: {
+  icon: any
+  title: string
+  detail: string
+}) => (
   <div className="flex items-center gap-4">
     <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-emerald-600">
       <Icon className="h-5 w-5" />
@@ -78,7 +86,11 @@ export default function ContactUs() {
         </div>
 
         {/* Right: Form */}
-        <Card variant="default" hover={false} className="rounded-3xl h-full p-4 sm:p-8 lg:p-9">
+        <Card
+          variant="default"
+          hover={false}
+          className="rounded-3xl h-full p-4 sm:p-8 lg:p-9"
+        >
           <form className="flex flex-col gap-4">
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
               <Input placeholder="First name" />

@@ -4,7 +4,12 @@
  */
 
 // UI Constants
-export { BUTTON_STYLES, CARD_STYLES, COLOR_PALETTE, SPACING } from './ui.constants'
+export {
+  BUTTON_STYLES,
+  CARD_STYLES,
+  COLOR_PALETTE,
+  SPACING,
+} from './ui.constants'
 
 // Domain Constants
 export {

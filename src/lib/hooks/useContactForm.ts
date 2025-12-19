@@ -40,7 +40,8 @@ export function useContactForm(): UseContactFormReturn {
   const validate = (): boolean => {
     const newErrors: Partial<ContactFormData> = {}
 
-    if (!formData.firstName.trim()) newErrors.firstName = 'First name is required'
+    if (!formData.firstName.trim())
+      newErrors.firstName = 'First name is required'
     if (!formData.lastName.trim()) newErrors.lastName = 'Last name is required'
     if (!formData.email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
       newErrors.email = 'Valid email is required'
