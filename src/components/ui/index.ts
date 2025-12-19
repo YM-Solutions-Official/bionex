@@ -9,6 +9,7 @@ export { Input } from './Input'
 export { Badge } from './Badge'
 export { ContactItem } from './ContactItem'
 export { ProcessItem } from './ProcessItem'
+export { PageHeader } from './PageHeader'
 
 export type {
   ButtonProps,
