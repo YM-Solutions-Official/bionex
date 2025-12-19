@@ -7,10 +7,13 @@ import type { CardProps, ServiceCardProps } from '@/lib/types'
 import { cn } from '@/lib/utils'
 
 const CARD_VARIANTS = {
-  default: 'rounded-2xl border border-slate-100 bg-white p-7 shadow-sm',
-  elevated: 'rounded-2xl border border-slate-100 bg-white p-7 shadow-lg',
-  bordered: 'rounded-2xl border-2 border-slate-200 bg-white p-7',
-  ghost: 'rounded-2xl bg-slate-50 border border-slate-200 p-7',
+  default:
+    'rounded-2xl border border-slate-100 bg-white p-7 shadow-sm hover:shadow-md',
+  elevated:
+    'rounded-2xl border border-slate-100 bg-white p-7 shadow-lg hover:shadow-xl',
+  bordered:
+    'rounded-2xl border-2 border-slate-200 bg-white p-7 hover:border-emerald-300 hover:shadow-sm',
+  ghost: 'rounded-2xl bg-slate-50 border border-slate-200 p-7 hover:bg-slate-100',
 }
 
 /**
@@ -30,11 +33,13 @@ export function Card({
   onClick,
 }: CardProps) {
   const variantClass = CARD_VARIANTS[variant]
-  const hoverClass = hover ? 'hover:-translate-y-1 hover:shadow-lg' : ''
+  const hoverClass = hover
+    ? 'hover:-translate-y-1 hover:shadow-lg focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2'
+    : ''
   const combinedClassName = cn(
     variantClass,
     hoverClass,
-    'transition-all duration-200',
+    'transition-all duration-300 ease-out',
     className,
   )
 

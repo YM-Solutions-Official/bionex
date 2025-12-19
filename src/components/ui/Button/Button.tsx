@@ -27,11 +27,13 @@ const BUTTON_SIZES = {
 
 const BUTTON_VARIANTS = {
   primary:
-    'bg-emerald-600 text-white shadow-md shadow-emerald-500/30 hover:bg-emerald-500',
-  secondary: 'bg-slate-900 text-white hover:bg-slate-800',
+    'bg-emerald-600 text-white shadow-md shadow-emerald-500/30 hover:bg-emerald-700 hover:shadow-lg hover:shadow-emerald-500/40 focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 active:scale-95',
+  secondary:
+    'bg-slate-900 text-white hover:bg-slate-800 focus:ring-2 focus:ring-slate-500 focus:ring-offset-2 active:scale-95',
   outline:
-    'border border-slate-200 bg-white text-slate-800 hover:border-emerald-400 hover:text-emerald-600',
-  ghost: 'text-slate-600 hover:text-slate-900 hover:bg-slate-100',
+    'border border-slate-200 bg-white text-slate-800 hover:border-emerald-400 hover:text-emerald-600 hover:bg-emerald-50 focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 active:scale-95',
+  ghost:
+    'text-slate-600 hover:text-slate-900 hover:bg-slate-100 focus:ring-2 focus:ring-slate-500 focus:ring-offset-2 active:scale-95',
 }
 
 export function Button({
@@ -50,7 +52,7 @@ export function Button({
   iconPosition = 'right',
 }: ButtonProps) {
   const baseClasses =
-    'inline-flex items-center justify-center gap-2 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed'
+    'inline-flex items-center justify-center gap-2 transition-all duration-300 ease-out disabled:opacity-50 disabled:cursor-not-allowed focus-visible:outline-none'
   const sizeClass = BUTTON_SIZES[size]
   const variantClass = BUTTON_VARIANTS[variant]
   const widthClass = fullWidth ? 'w-full' : ''

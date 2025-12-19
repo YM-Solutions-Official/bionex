@@ -25,16 +25,16 @@ export function Input({
   ...props
 }: InputProps) {
   const baseClasses =
-    'w-full rounded-lg border px-4 py-3 text-sm outline-none transition-all focus:ring-2'
+    'w-full rounded-lg border px-4 py-3 text-sm outline-none transition-all duration-300 ease-out focus:ring-2 focus:outline-none'
 
   const variantClass =
     variant === 'ghost'
-      ? 'border-transparent bg-slate-100 focus:border-emerald-500 focus:ring-emerald-200'
+      ? 'border-transparent bg-slate-100 focus:border-emerald-500 focus:ring-emerald-200 focus:bg-white'
       : 'border-slate-200 bg-white focus:border-emerald-500 focus:ring-emerald-200'
 
   const errorClass = error
     ? 'border-red-500 focus:border-red-500 focus:ring-red-200'
-    : ''
+    : 'hover:border-slate-300'
 
   const combinedClassName =
     `${baseClasses} ${variantClass} ${errorClass} ${className}`.trim()

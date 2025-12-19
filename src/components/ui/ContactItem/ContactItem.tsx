@@ -19,13 +19,13 @@ export interface ContactItemProps {
  */
 export function ContactItem({ icon: Icon, title, detail }: ContactItemProps) {
   return (
-    <div className="flex items-center gap-4">
-      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-emerald-600">
+    <div className="flex items-center gap-4 transition-all duration-300 ease-out hover:translate-x-1">
+      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-emerald-600 transition-all duration-300 ease-out hover:bg-emerald-100 hover:shadow-md">
         {Icon}
       </div>
       <div>
-        <h4 className="text-sm font-semibold text-slate-900">{title}</h4>
-        <p className="text-xs text-slate-500 sm:text-sm">{detail}</p>
+        <h4 className="text-sm font-semibold text-slate-900 transition-colors duration-300 ease-out group-hover:text-emerald-600">{title}</h4>
+        <p className="text-xs text-slate-500 transition-colors duration-300 ease-out sm:text-sm hover:text-slate-700">{detail}</p>
       </div>
     </div>
   )
