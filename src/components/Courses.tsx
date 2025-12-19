@@ -1,5 +1,5 @@
 import { CheckCircle2 } from 'lucide-react'
-import { coursesData } from '@/lib/courses'
+import { COURSES_DATA } from '@/lib/constants/courses.constants'
 import { Card } from './ui/Card'
 
 export default function Courses() {
@@ -37,7 +37,7 @@ export default function Courses() {
 
         {/* Cards */}
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-          {coursesData.map((course, idx) => {
+          {COURSES_DATA.map((course, idx) => {
             const Icon = course.icon
             return (
               <Card key={idx} variant="default" hover>

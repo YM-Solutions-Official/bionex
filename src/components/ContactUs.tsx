@@ -1,5 +1,5 @@
 import { CheckCircle2, Mail, MapPin, Phone } from 'lucide-react'
-import { reasons } from '@/lib/contact'
+import { CONTACT_REASONS } from '@/lib/constants/contact.constants'
 import { Card } from './ui/Card'
 
 const ContactItem = ({
@@ -72,7 +72,7 @@ export default function ContactUs() {
               Why choose us
             </h4>
             <ul className="space-y-2">
-              {reasons.map((item) => (
+              {CONTACT_REASONS.map((item) => (
                 <li
                   key={item}
                   className="flex items-center gap-2 text-sm text-slate-600"
