@@ -1,4 +1,4 @@
-export interface IEventStats {
+export interface EventStat {
   icon: string
   label: string
   value: number
@@ -6,7 +6,7 @@ export interface IEventStats {
   description: string
 }
 
-export const eventStats: IEventStats[] = [
+export const eventStats: EventStat[] = [
   {
     icon: '🚀',
     label: 'Projects Completed',

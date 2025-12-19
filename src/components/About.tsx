@@ -1,13 +1,6 @@
 import { CheckCircle2 } from 'lucide-react'
-
-const services = [
-  'Bio reactors & Fermentation Systems',
-  'Website Design & Development',
-  'UI/UX Design',
-  'E‑commerce Solutions',
-  'Custom Web Applications',
-  'SEO & Performance Optimization',
-]
+import { headerServices } from '@/lib/services'
+import { Card } from './ui/Card'
 
 export default function AboutUs() {
   return (
@@ -29,19 +22,19 @@ export default function AboutUs() {
             </p>
           </div>
 
-          <div className="rounded-2xl shadow-md border border-slate-100 bg-slate-50 p-6 sm:p-7">
+          <Card variant="ghost" hover={false}>
             <h3 className="mb-4 text-base font-semibold text-slate-900 sm:text-lg">
               What we do
             </h3>
-            <ul className="grid  grid-cols-1 gap-3 text-sm text-slate-700 sm:grid-cols-2">
-              {services.map((service) => (
+            <ul className="grid grid-cols-1 gap-3 text-sm text-slate-700 sm:grid-cols-2">
+              {headerServices.map((service) => (
                 <li key={service} className="flex items-start gap-2">
                   <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-emerald-500" />
                   <span>{service}</span>
                 </li>
               ))}
             </ul>
-          </div>
+          </Card>
         </div>
 
         {/* Right: Images */}

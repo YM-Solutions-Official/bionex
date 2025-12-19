@@ -1,44 +1,5 @@
 import { Link } from '@tanstack/react-router'
-import { Mail, MapPin, Phone } from 'lucide-react'
-
-const footerSections = [
-  {
-    title: 'Solutions',
-    links: [
-      { label: 'Bioreactors', href: '/services' },
-      { label: 'Automation', href: '/services' },
-      { label: 'Software', href: '/services' },
-      { label: 'Consulting', href: '/contact' },
-    ],
-  },
-  {
-    title: 'Company',
-    links: [
-      { label: 'About us', href: '/about' },
-      { label: 'Careers', href: '/about' },
-      { label: 'Privacy policy', href: '/' },
-    ],
-  },
-]
-
-const contactInfo = [
-  {
-    icon: MapPin,
-    value:
-      'KH. NO. 134/10 & 134/11, Ground Floor Street No. 75, A Blk‑B Sant Nagar Village, Burari, Delhi 110084',
-    href: '#',
-  },
-  {
-    icon: Mail,
-    value: 'official.bionex@gmail.com',
-    href: 'mailto:official.bionex@gmail.com',
-  },
-  {
-    icon: Phone,
-    value: '+91 98765 43210',
-    href: 'tel:+919876543210',
-  },
-]
+import { footerSections, contactInfo } from '@/lib/footer'
 
 export default function Footer() {
   const year = new Date().getFullYear()

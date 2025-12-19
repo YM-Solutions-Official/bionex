@@ -1,4 +1,27 @@
-import { Mail, MapPin, Phone, CheckCircle2 } from 'lucide-react'
+import { CheckCircle2, Mail, MapPin, Phone } from 'lucide-react'
+import { reasons } from '@/lib/contact'
+import { Card } from './ui/Card'
+
+const ContactItem = ({ icon: Icon, title, detail }: { icon: any; title: string; detail: string }) => (
+  <div className="flex items-center gap-4">
+    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-emerald-600">
+      <Icon className="h-5 w-5" />
+    </div>
+    <div>
+      <h4 className="text-sm font-semibold text-slate-900">{title}</h4>
+      <p className="text-xs text-slate-500 sm:text-sm">{detail}</p>
+    </div>
+  </div>
+)
+
+type InputProps = React.InputHTMLAttributes<HTMLInputElement>
+
+const Input = (props: InputProps) => (
+  <input
+    {...props}
+    className="w-full rounded-lg border border-slate-200 px-4 py-3 text-sm text-slate-700 outline-none transition-all focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200"
+  />
+)
 
 export default function ContactUs() {
   return (
@@ -36,28 +59,26 @@ export default function ContactUs() {
             />
           </div>
 
-          <div className="mt-4 rounded-2xl border shadow-md border-slate-100 bg-slate-50 p-5 sm:p-6">
+          <Card variant="ghost" hover={false}>
             <h4 className="mb-3 text-sm font-semibold text-slate-900 sm:text-base">
               Why choose us
             </h4>
             <ul className="space-y-2">
-              {['24/7 support', 'Expert team', 'Frugal innovation'].map(
-                (item) => (
-                  <li
-                    key={item}
-                    className="flex items-center gap-2 text-sm text-slate-600"
-                  >
-                    <CheckCircle2 className="h-4 w-4 text-emerald-500" />
-                    <span>{item}</span>
-                  </li>
-                ),
-              )}
+              {reasons.map((item) => (
+                <li
+                  key={item}
+                  className="flex items-center gap-2 text-sm text-slate-600"
+                >
+                  <CheckCircle2 className="h-4 w-4 text-emerald-500" />
+                  <span>{item}</span>
+                </li>
+              ))}
             </ul>
-          </div>
+          </Card>
         </div>
 
         {/* Right: Form */}
-        <div className="rounded-3xl h-full border border-slate-100 bg-white p-4 shadow-xl sm:p-8 lg:p-9 ">
+        <Card variant="default" hover={false} className="rounded-3xl h-full p-4 sm:p-8 lg:p-9">
           <form className="flex flex-col gap-4">
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
               <Input placeholder="First name" />
@@ -85,35 +106,8 @@ export default function ContactUs() {
               Send message
             </button>
           </form>
-        </div>
+        </Card>
       </div>
     </section>
   )
 }
-
-type ContactItemProps = {
-  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>
-  title: string
-  detail: string
-}
-
-const ContactItem = ({ icon: Icon, title, detail }: ContactItemProps) => (
-  <div className="flex items-center gap-4">
-    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-emerald-600">
-      <Icon className="h-5 w-5" />
-    </div>
-    <div>
-      <h4 className="text-sm font-semibold text-slate-900">{title}</h4>
-      <p className="text-xs text-slate-500 sm:text-sm">{detail}</p>
-    </div>
-  </div>
-)
-
-type InputProps = React.InputHTMLAttributes<HTMLInputElement>
-
-const Input = (props: InputProps) => (
-  <input
-    {...props}
-    className="w-full rounded-lg border border-slate-200 px-4 py-3 text-sm text-slate-700 outline-none transition-all focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200"
-  />
-)

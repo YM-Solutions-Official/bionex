@@ -1,7 +1,7 @@
 'use client'
-import { eventStats } from '@/lib/counter'
+import { eventStats } from '@/lib/stats'
 import CountUp from 'react-countup'
-eventStats
+
 export default function Counter() {
   return (
     <section className="w-full h-100 max-lg:h-full max-md:py-10 flex justify-center items-center flex-col relative bg-cover bg-fixed bg-center bg-no-repeat bg-[url('https://t4.ftcdn.net/jpg/08/10/40/51/360_F_810405110_yGQETirKk1O25jZ1H65f3IOz7SjoBPsZ.jpg')]">
@@ -22,8 +22,7 @@ export default function Counter() {
               className="bg-[#ffffff24] text-white rounded-2xl w-55 max-sm:w-37.5 h-40 p-1 flex flex-col justify-center items-center text-3xl gap-1 max-sm:gap-0 max-sm:h-35"
             >
               <span className="max-sm:text-[20px]">
-                {' '}
-                {stat.icon}{' '}
+                {stat.icon}
                 {typeof stat.value === 'number' ? (
                   <>
                     {' '}

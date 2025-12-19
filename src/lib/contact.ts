@@ -1,4 +1,16 @@
-export const contactMethods = [
+export interface ContactMethod {
+  icon: string
+  title: string
+  detail: string
+}
+
+export interface FormField {
+  placeholder: string
+  type: string
+  width: string
+}
+
+export const contactMethods: ContactMethod[] = [
   {
     icon: '📩',
     title: 'Email us at',
@@ -18,12 +30,13 @@ export const reasons = [
   'Rapid deployment and dependable ongoing maintenance',
 ]
 
-export const formFields = [
+export const formFields: FormField[] = [
   { placeholder: 'Enter your name', type: 'text', width: '45.5%' },
   { placeholder: 'Enter your last name', type: 'text', width: '45.5%' },
   { placeholder: 'Enter your email', type: 'text', width: '93.5%' },
   { placeholder: 'Enter your phone number', type: 'text', width: '93.5%' },
 ]
+
 export const selectOptions = [
   'Select a service',
   'Bioprocess Consulting',

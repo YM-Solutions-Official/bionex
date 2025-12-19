@@ -1,4 +1,5 @@
 import { ArrowRight } from 'lucide-react'
+import { Button } from './ui/Button'
 
 export default function Header() {
   return (
@@ -32,14 +33,23 @@ export default function Header() {
         </p>
 
         <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-center">
-          <button className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-500 px-8 py-3 text-sm font-medium text-slate-950 shadow-[0_0_45px_rgba(16,185,129,0.55)] transition-transform hover:-translate-y-0.5 hover:bg-emerald-400">
-            <span>Explore solutions</span>
-            <ArrowRight className="h-4 w-4" />
-          </button>
+          <Button
+            variant="primary"
+            size="md"
+            className="rounded-full bg-emerald-500 px-8 py-3 shadow-[0_0_45px_rgba(16,185,129,0.55)] hover:bg-emerald-400"
+            icon={<ArrowRight className="h-4 w-4" />}
+            iconPosition="right"
+          >
+            Explore solutions
+          </Button>
 
-          <button className="inline-flex items-center justify-center rounded-full border border-slate-500/60 bg-slate-900/60 px-8 py-3 text-sm font-normal text-slate-50 backdrop-blur-sm transition-colors hover:border-emerald-400 hover:text-emerald-200">
+          <Button
+            variant="outline"
+            size="md"
+            className="rounded-full border-slate-500/60 bg-slate-900/60 text-slate-50 backdrop-blur-sm hover:border-emerald-400 hover:text-emerald-200"
+          >
             View our work
-          </button>
+          </Button>
         </div>
       </div>
     </header>

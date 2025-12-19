@@ -1,27 +1,5 @@
-import { Lightbulb, Users, Rocket } from 'lucide-react'
-
-const steps = [
-  {
-    icon: <Users className="h-6 w-6" />,
-    title: 'Collaborate',
-    description:
-      'Work side‑by‑side with your team to understand goals and constraints.',
-    color: 'bg-blue-500',
-  },
-  {
-    icon: <Lightbulb className="h-6 w-6" />,
-    title: 'Innovate',
-    description:
-      'Apply frugal innovation to design smart, cost‑effective solutions.',
-    color: 'bg-emerald-500',
-  },
-  {
-    icon: <Rocket className="h-6 w-6" />,
-    title: 'Execute',
-    description: 'Prototype fast, iterate quickly, and launch with confidence.',
-    color: 'bg-purple-500',
-  },
-]
+import { approachSteps } from '@/lib/constants'
+import { Card } from './ui/Card'
 
 export default function OurApproach() {
   return (
@@ -53,22 +31,27 @@ export default function OurApproach() {
 
         {/* Steps */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-          {steps.map((step) => (
-            <article
-              key={step.title}
-              className="group rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm transition-all duration-200 hover:-translate-y-1 hover:bg-white/10"
-            >
-              <div
-                className={`mb-5 flex h-12 w-12 items-center justify-center rounded-xl text-white shadow-lg shadow-black/30 ${step.color}`}
+          {approachSteps.map((step) => {
+            const Icon = step.icon
+            return (
+              <Card
+                key={step.title}
+                variant="ghost"
+                hover
+                className="group rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm"
               >
-                {step.icon}
-              </div>
-              <h3 className="mb-2 text-lg font-semibold text-white">
-                {step.title}
-              </h3>
-              <p className="text-sm text-slate-300">{step.description}</p>
-            </article>
-          ))}
+                <div
+                  className={`mb-5 flex h-12 w-12 items-center justify-center rounded-xl text-white shadow-lg shadow-black/30 ${step.color}`}
+                >
+                  <Icon className="h-6 w-6" />
+                </div>
+                <h3 className="mb-2 text-lg font-semibold text-white">
+                  {step.title}
+                </h3>
+                <p className="text-sm text-slate-300">{step.description}</p>
+              </Card>
+            )
+          })}
         </div>
       </div>
     </section>

@@ -1,31 +1,6 @@
-import { FlaskConical, Globe2, PanelsTopLeft, ShoppingBag } from 'lucide-react'
+import { servicesList } from '@/lib/services'
+import { Card, Button } from './ui'
 
-const servicesList = [
-  {
-    title: 'Bio Reactors',
-    desc: 'Advanced fermentation systems.',
-    icon: FlaskConical,
-    bg: 'bg-emerald-50 text-emerald-600',
-  },
-  {
-    title: 'Web Development',
-    desc: 'Scalable full‑stack apps.',
-    icon: Globe2,
-    bg: 'bg-blue-50 text-blue-600',
-  },
-  {
-    title: 'UI/UX Design',
-    desc: 'Clean, user‑first interfaces.',
-    icon: PanelsTopLeft,
-    bg: 'bg-purple-50 text-purple-600',
-  },
-  {
-    title: 'E‑commerce',
-    desc: 'Shopify and custom stores.',
-    icon: ShoppingBag,
-    bg: 'bg-orange-50 text-orange-600',
-  },
-]
 export default function Services() {
   return (
     <section className="w-full bg-slate-50 py-16 lg:py-24">
@@ -43,9 +18,11 @@ export default function Services() {
         {/* Grid */}
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           {servicesList.map(({ title, desc, icon: Icon, bg }) => (
-            <article
+            <Card
               key={title}
-              className="group flex h-full flex-col justify-between rounded-2xl border border-slate-100 bg-white p-7 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-lg"
+              variant="default"
+              hover
+              className="group flex h-full flex-col justify-between"
             >
               <div>
                 <div
@@ -58,11 +35,15 @@ export default function Services() {
                 </h3>
                 <p className="text-sm text-slate-600">{desc}</p>
               </div>
-            </article>
+            </Card>
           ))}
 
           {/* CTA Card */}
-          <article className="relative flex flex-col items-center justify-center overflow-hidden rounded-2xl bg-slate-900 p-8 text-center">
+          <Card
+            variant="default"
+            hover={false}
+            className="relative flex flex-col items-center justify-center overflow-hidden bg-slate-900 p-8 text-center"
+          >
             <div className="pointer-events-none absolute inset-0 bg-emerald-500/20 blur-3xl" />
             <div className="relative z-10 space-y-4">
               <h3 className="text-xl font-semibold text-white">
@@ -71,11 +52,15 @@ export default function Services() {
               <p className="text-sm text-slate-300">
                 Tell us what you need and we will craft a plan for you.
               </p>
-              <button className="rounded-lg bg-emerald-500 px-6 py-2 text-sm font-semibold text-slate-900 transition-colors hover:bg-emerald-400">
+              <Button
+                variant="primary"
+                size="sm"
+                className="rounded-lg bg-emerald-500 px-6 py-2 text-sm font-semibold text-slate-900 hover:bg-emerald-400"
+              >
                 Contact us
-              </button>
+              </Button>
             </div>
-          </article>
+          </Card>
         </div>
       </div>
     </section>

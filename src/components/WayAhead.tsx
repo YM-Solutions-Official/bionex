@@ -1,4 +1,6 @@
-import { Handshake, FileSignature, Cpu, FlaskConical } from 'lucide-react'
+import { Handshake, FileSignature } from 'lucide-react'
+import { wayAheadCards } from '@/lib/constants'
+import { Card } from './ui/Card'
 
 export default function WayAhead() {
   return (
@@ -36,7 +38,7 @@ export default function WayAhead() {
             </div>
 
             {/* Formal MoUs + tags */}
-            <div className="space-y-4 ">
+            <div className="space-y-4">
               <div className="flex gap-4">
                 <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600">
                   <FileSignature className="h-5 w-5" />
@@ -51,26 +53,26 @@ export default function WayAhead() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1  gap-3 sm:grid-cols-2">
-                <div className="rounded-xl shadow-md  border border-slate-100 bg-slate-50 p-4">
-                  <div className="mb-1 flex items-center gap-2 text-sm font-medium text-slate-900">
-                    <Cpu className="h-4 w-4 text-purple-500" />
-                    <span>Lithography</span>
-                  </div>
-                  <p className="text-xs text-slate-500">
-                    High-precision processes for next‑gen semiconductors.
-                  </p>
-                </div>
-
-                <div className="rounded-xl shadow-md border border-slate-100 bg-slate-50 p-4">
-                  <div className="mb-1 flex items-center gap-2 text-sm font-medium text-slate-900">
-                    <FlaskConical className="h-4 w-4 text-teal-500" />
-                    <span>Bio Reactor</span>
-                  </div>
-                  <p className="text-xs text-slate-500">
-                    AI‑driven bioreactors for cleaner, scalable production.
-                  </p>
-                </div>
+              <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                {wayAheadCards.map((card) => {
+                  const Icon = card.icon
+                  return (
+                    <Card
+                      key={card.title}
+                      variant="ghost"
+                      hover={false}
+                      className="p-4"
+                    >
+                      <div className="mb-1 flex items-center gap-2 text-sm font-medium text-slate-900">
+                        <Icon className={`h-4 w-4 ${card.color}`} />
+                        <span>{card.title}</span>
+                      </div>
+                      <p className="text-xs text-slate-500">
+                        {card.description}
+                      </p>
+                    </Card>
+                  )
+                })}
               </div>
             </div>
           </div>
