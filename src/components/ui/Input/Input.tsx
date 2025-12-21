@@ -42,13 +42,13 @@ export function Input({
   return (
     <div className="w-full">
       {label && (
-        <label className="mb-1.5 block text-xs font-semibold text-slate-800 sm:text-sm">
+        <label className="mb-1.5 block text-sm font-semibold text-slate-800 sm:text-sm">
           {label}
         </label>
       )}
       <input {...props} className={combinedClassName} />
-      {hint && <p className="mt-1 text-xs text-slate-500">{hint}</p>}
-      {error && <p className="mt-1 text-xs text-red-600">{error}</p>}
+      {hint && <p className="mt-1 text-sm text-slate-500">{hint}</p>}
+      {error && <p className="mt-1 text-sm text-red-600">{error}</p>}
     </div>
   )
 }

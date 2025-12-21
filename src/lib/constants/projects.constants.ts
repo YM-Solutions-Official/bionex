@@ -10,7 +10,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
     title: 'TRYST 2025 – cultural fest website',
     description:
       "Event platform with live updates and smooth registrations for Delhi University's annual fest.",
-    image: '/images/tryst-fest-website.png',
+    image: '/images/tryst.png',
     tags: ['Event Tech', 'University Fest', 'UI/UX'],
     link: 'https://tryst-website.vercel.app/',
   },
@@ -18,7 +18,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
     title: 'SkillsYard – learning platform',
     description:
       'Skill‑based learning platform with course support, payments, and fully responsive design.',
-    image: '/images/skillsyard-website.png',
+    image: '/images/skillsyard.png',
     tags: ['EdTech', 'Online Learning', 'Payments'],
     link: 'https://skillsyard.com/',
   },
@@ -26,7 +26,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
     title: 'Cancer Heal – medical website',
     description:
       'Trust‑centred site highlighting services, team, and milestones with clear calls‑to‑action.',
-    image: '/images/cancerheal-website.png',
+    image: '/images/cancerheal.png',
     tags: ['Healthcare', 'Company Profile', 'Professional'],
     link: 'https://cancerheal.co.in/',
   },

@@ -1,16 +1,15 @@
-// src/main.tsx   ← replace everything with this
-
+// src/main.tsx
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider, createRouter } from '@tanstack/react-router'
 import './styles.css'
+import { routeTree } from '../src/routeTree.gen.ts'
+import Page404 from './components/ui/404page/404page.tsx'
 
-// This is the correct path when routeTree.gen.ts is in the project root
-// import { routeTree } from '../routeTree.gen.ts'   // ← one folder up
-import { routeTree } from '../src/routeTree.gen.ts' // ← current src folder
-
-// Create router instance
-const router = createRouter({ routeTree })
+const router = createRouter({
+  routeTree,
+  defaultNotFoundComponent: Page404,
+})
 
 ReactDOM.createRoot(document.getElementById('app')!).render(
   <React.StrictMode>

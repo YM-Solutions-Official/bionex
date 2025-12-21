@@ -19,7 +19,7 @@ export function AboutHero() {
         {/* Left: text */}
         <div className="flex flex-col gap-6">
           <div className="space-y-3">
-            <span className="inline-block rounded-full bg-emerald-50 px-4 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-emerald-700 sm:text-sm">
+            <span className="inline-block rounded-full bg-emerald-50 px-4 py-1 text-sm font-semibold uppercase tracking-[0.18em] text-emerald-700 sm:text-sm">
               About Bionex
             </span>
             <h1 className="text-2xl font-semibold leading-tight text-slate-900 sm:text-3xl lg:text-4xl">

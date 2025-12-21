@@ -13,7 +13,7 @@ export const BUTTON_STYLES = {
     ghost: 'text-slate-600 hover:text-slate-900 hover:bg-slate-100',
   },
   sizes: {
-    sm: 'px-4 py-2 text-xs font-medium rounded-lg',
+    sm: 'px-4 py-2 text-sm font-medium rounded-lg',
     md: 'px-6 py-3 text-sm font-semibold rounded-full',
     lg: 'px-8 py-3 text-base font-semibold rounded-full',
   },

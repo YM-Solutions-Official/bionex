@@ -33,13 +33,13 @@ export function PageHeader({
       <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center px-4 text-center sm:px-6 lg:px-8">
         {/* Badge */}
         {badge && (
-          <span className="mb-6 inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/15 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.15em] text-emerald-200 backdrop-blur-sm transition-all duration-300 ease-out hover:bg-emerald-500/25">
+          <span className="mb-6 inline-flex items-center rounded-full border border-emerald-400/40 bg-emerald-500/15 px-4 py-1.5 text-sm font-semibold uppercase tracking-[0.15em] text-emerald-200 backdrop-blur-sm transition-all duration-300 ease-out hover:bg-emerald-500/25">
             {badge}
           </span>
         )}
 
         {/* Title */}
-        <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl transition-all duration-300 ease-out">
+        <h1 className="text-4xl font-bold leading-tight text-white sm:text-4xl lg:text-6xl transition-all duration-300 ease-out">
           {title}
         </h1>
 

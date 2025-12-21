@@ -20,7 +20,7 @@ import type { ButtonProps } from '@/lib/types'
  * </Button>
  */
 const BUTTON_SIZES = {
-  sm: 'px-4 py-2 text-xs font-medium rounded-lg',
+  sm: 'px-4 py-2 text-sm font-medium rounded-lg',
   md: 'px-6 py-3 text-sm font-semibold rounded-full',
   lg: 'px-8 py-3 text-base font-semibold rounded-full',
 }

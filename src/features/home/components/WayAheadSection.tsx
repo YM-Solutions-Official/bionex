@@ -11,24 +11,24 @@ import { Card } from '@/components/ui'
  */
 export function WayAheadSection() {
   return (
-    <section className="w-full bg-white py-16 lg:py-24 overflow-hidden font-sans">
-      <div className="mx-auto grid max-w-7xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-2 lg:gap-20 lg:px-8">
+    <section className="w-full bg-white py-12 sm:py-16 lg:py-24 overflow-hidden font-sans">
+      <div className="mx-auto flex max-w-7xl flex-col gap-12 px-4 sm:px-6 lg:grid lg:grid-cols-2 lg:items-center lg:gap-20 lg:px-8">
         {/* Left */}
         <div className="space-y-8">
           <div>
-            <span className="text-xs font-medium uppercase tracking-[0.2em] text-emerald-600">
+            <span className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-600">
               Way Ahead
             </span>
-            <h2 className="mt-3 text-3xl font-semibold text-slate-900 sm:text-4xl lg:text-5xl">
+            <h2 className="mt-3 text-2xl font-semibold text-slate-900 sm:text-3xl lg:text-4xl xl:text-4xl">
               Pioneering frugal innovation.
             </h2>
-            <p className="mt-4 text-sm text-slate-600 sm:text-base">
+            <p className="mt-4 text-sm text-slate-600 sm:text-base max-w-xl">
               Smart partnerships and focused R&amp;D in lithography and
               bioreactors to build better, more affordable solutions.
             </p>
           </div>
 
-          <div className="space-y-6">
+          <div className="space-y-4 sm:space-y-6">
             <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
               {WAY_AHEAD_CARDS.map((card: any) => {
                 const Icon = card.icon
@@ -37,13 +37,17 @@ export function WayAheadSection() {
                     key={card.title}
                     variant="ghost"
                     hover={false}
-                    className="p-4"
+                    className="h-full rounded-xl border border-slate-100 bg-slate-50/60 p-4 sm:p-5"
                   >
-                    <div className="mb-1 flex items-center gap-2 text-sm font-medium text-slate-900">
-                      <Icon className={`h-4 w-4 ${card.color}`} />
+                    <div className="mb-2 flex items-center gap-2 text-sm font-medium text-slate-900">
+                      <span className="flex h-7 w-7 items-center justify-center rounded-full bg-white shadow-sm">
+                        <Icon className={`h-4 w-4 ${card.color}`} />
+                      </span>
                       <span>{card.title}</span>
                     </div>
-                    <p className="text-xs text-slate-500">{card.description}</p>
+                    <p className="text-sm text-slate-500 sm:text-sm">
+                      {card.description}
+                    </p>
                   </Card>
                 )
               })}
@@ -53,20 +57,30 @@ export function WayAheadSection() {
 
         {/* Right: Image composition */}
         <div className="relative flex justify-center lg:justify-end">
-          <div className="relative h-80 w-full max-w-md sm:h-95 lg:h-115">
-            <img
-              src="/images/bioaboutus.jpg"
-              alt="Lab equipment"
-              className="relative z-10 h-full w-full rounded-2xl object-cover shadow-2xl"
-            />
-            <img
-              src="/images/getstarted.jpg"
-              alt="Optics experiment"
-              className="absolute bottom-4 left-1/2 z-20 h-32 w-3/4 -translate-x-1/2 rounded-xl border-4 border-white object-cover shadow-[0_18px_45px_rgba(15,23,42,0.4)] sm:bottom-6 sm:left-6 sm:h-46 sm:w-2/3 sm:translate-x-0 lg:bottom-8 lg:-left-6"
-            />
+          <div className="relative w-full max-w-md sm:max-w-lg">
+            {/* Main image */}
+            <div className="aspect-4/3 overflow-hidden rounded-2xl shadow-2xl">
+              <img
+                src="/images/bioaboutus.jpg"
+                alt="Lab equipment"
+                className="h-full w-full object-cover"
+              />
+            </div>
+
+            {/* Floating card image */}
+            <div className="absolute -bottom-10 left-1/2 w-11/12 max-w-sm -translate-x-1/2 sm:-bottom-8 sm:left-8 sm:w-2/3 sm:translate-x-0 lg:-bottom-10 lg:-left-6">
+              <div className="overflow-hidden rounded-xl border-4 border-white shadow-[0_18px_45px_rgba(15,23,42,0.4)]">
+                <img
+                  src="/images/getstarted.jpg"
+                  alt="Optics experiment"
+                  className="h-32 w-full object-cover sm:h-40 md:h-44"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
   )
 }
+

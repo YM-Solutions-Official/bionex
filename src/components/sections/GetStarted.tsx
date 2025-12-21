@@ -17,11 +17,11 @@ export function GetStarted() {
 
       {/* Content */}
       <div className="relative z-10 mx-auto flex max-w-4xl flex-col items-center px-4 text-center sm:px-6">
-        <span className="mb-4 inline-flex items-center rounded-full border border-emerald-200 bg-emerald-50 px-4 py-1 text-xs font-medium uppercase tracking-[0.2em] text-emerald-700">
+        <span className="mb-4 inline-flex items-center rounded-full border border-emerald-200 bg-emerald-50 px-4 py-1 text-sm font-medium uppercase tracking-[0.2em] text-emerald-700">
           Let&apos;s build the future
         </span>
 
-        <h2 className="text-3xl font-semibold leading-tight text-slate-900 sm:text-4xl lg:text-5xl">
+        <h2 className="text-3xl font-semibold leading-tight text-slate-900 sm:text-4xl lg:text-4xl">
           Ready to revolutionize your{' '}
           <span className="text-emerald-600">bioprocessing?</span>
         </h2>

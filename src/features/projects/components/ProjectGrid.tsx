@@ -15,7 +15,7 @@ export function ProjectGrid() {
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-10 px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-3xl text-center">
-          <h2 className="text-3xl font-semibold sm:text-4xl lg:text-5xl">
+          <h2 className="text-3xl font-semibold sm:text-4xl lg:text-4xl">
             Featured <span className="text-[#00A676]">Projects</span>
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-slate-600 sm:text-lg">

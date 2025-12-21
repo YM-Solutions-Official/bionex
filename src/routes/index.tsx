@@ -2,14 +2,13 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { HeroSection, WayAheadSection } from '@/features/home'
 import {
-  Counter,
   Courses,
   OurApproach,
   GetStarted,
 } from '@/components/sections'
 import { ProjectGrid } from '@/features/projects'
 import { ServiceGrid } from '@/features/services'
-import { ContactInfo } from '@/features/contact'
+import ContactUs from '@/components/ContactUs'
 
 export const Route = createFileRoute('/')({
   component: Home,
@@ -24,11 +23,10 @@ function Home() {
       <HeroSection />
       <WayAheadSection />
       <Courses />
-      <Counter />
       <OurApproach />
       <ProjectGrid />
       <ServiceGrid />
-      <ContactInfo />
+      <ContactUs />
       <GetStarted />
     </main>
   )
