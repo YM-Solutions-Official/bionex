@@ -9,41 +9,42 @@ import type { ApproachStep, WayAheadCard, CTAButton } from '@/lib/types'
 export const APPROACH_STEPS: ApproachStep[] = [
   {
     icon: Users,
-    title: 'Collaborate',
+    title: 'Hypothesize',
     description:
-      'Work side‑by‑side with your team to understand goals and constraints.',
-    color: 'bg-blue-500',
+      'Identifying variables and establishing scientific questions through interdisciplinary peer review.',
+    color: 'bg-blue-600',
   },
   {
     icon: Lightbulb,
-    title: 'Innovate',
+    title: 'Synthesize',
     description:
-      'Apply frugal innovation to design smart, cost‑effective solutions.',
-    color: 'bg-emerald-500',
+      'Merging Physics, Chemistry, and Biology to create a unified experimental model.',
+    color: 'bg-emerald-600',
   },
   {
     icon: Rocket,
-    title: 'Execute',
-    description: 'Prototype fast, iterate quickly, and launch with confidence.',
-    color: 'bg-purple-500',
+    title: 'Discover',
+    description:
+      'Finalizing peer-reviewed data and publishing breakthroughs for the global scientific community.',
+    color: 'bg-purple-600',
   },
 ]
 
 export const WAY_AHEAD_CARDS: WayAheadCard[] = [
   {
     icon: Cpu,
-    title: 'Lithography',
-    description: 'High-precision processes for next‑gen semiconductors.',
-    color: 'text-purple-500',
+    title: 'Nanobiotechnology',
+    description: 'Atomic-scale engineering of medical delivery systems.',
+    color: 'text-purple-600',
   },
   {
     icon: FlaskConical,
-    title: 'Bio Reactor',
-    description: 'AI‑driven bioreactors for cleaner, scalable production.',
-    color: 'text-teal-500',
+    title: 'Exobiology',
+    description:
+      'Searching for the chemical and physical signatures of life beyond Earth.',
+    color: 'text-teal-600',
   },
 ]
-
 export const CTA_BUTTONS: CTAButton[] = [
   {
     text: 'Schedule a demo',

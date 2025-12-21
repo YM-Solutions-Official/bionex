@@ -13,7 +13,7 @@ export const Route = createFileRoute('/about')({
  */
 function About() {
   return (
-    <main className='mt-10'>
+    <main className="mt-10">
       <ScrollToTop />
       <AboutHero />
       <GetStarted />

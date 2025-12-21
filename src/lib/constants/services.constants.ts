@@ -8,77 +8,70 @@ import type { ServiceListItem, Service } from '@/lib/types'
 
 /** Header section services list */
 export const HEADER_SERVICES = [
-  'Bio reactors & Fermentation Systems',
-  'Website Design & Development',
-  'UI/UX Design',
-  'E‑commerce Solutions',
-  'Custom Web Applications',
-  'SEO & Performance Optimization',
+  'Molecular Dynamics & Biophysics',
+  'Chemical Synthesis & Analysis',
+  'Advanced Genomic Sequencing',
+  'Quantum Chemical Modeling',
+  'Biological Systems Simulation',
+  'Laboratory Automation Solutions',
 ]
 
 /** Main services grid items */
 export const SERVICES_LIST: ServiceListItem[] = [
   {
-    title: 'Bio Reactors',
-    desc: 'Advanced fermentation systems.',
+    title: 'Biophysics Nexus',
+    desc: 'Studying biological systems through physics.',
     icon: FlaskConical,
     bg: 'bg-emerald-50 text-emerald-600',
   },
   {
-    title: 'Web Development',
-    desc: 'Scalable full‑stack apps.',
+    title: 'Chemical Intel',
+    desc: 'Predictive molecular synthesis & reactivity.',
     icon: Globe2,
     bg: 'bg-blue-50 text-blue-600',
   },
   {
-    title: 'UI/UX Design',
-    desc: 'Clean, user‑first interfaces.',
+    title: 'Quantum Biology',
+    desc: 'Analyzing subatomic biological interactions.',
     icon: PanelsTopLeft,
     bg: 'bg-purple-50 text-purple-600',
   },
   {
-    title: 'E‑commerce',
-    desc: 'Shopify and custom stores.',
+    title: 'Bio-Automation',
+    desc: 'Smart labs with integrated AI diagnostics.',
     icon: ShoppingBag,
     bg: 'bg-orange-50 text-orange-600',
   },
 ]
 
-/** Detailed services data */
+/** Detailed services data for Bionex */
 export const SERVICES_DATA: Service[] = [
   {
-    title: 'Bioprocess Consulting',
+    title: 'Spectroscopic Analysis',
     description:
-      'Tailored analysis of your bioprocessing needs to optimize bioreactor system design.',
+      'Utilizing advanced light-matter interaction to identify chemical signatures and molecular structures.',
     bgColor: '#EDE8FF',
-    icon: '/icons/bioprocess-analysis.png',
+    icon: '/icons/spectroscopy.png',
   },
   {
-    title: 'Bioreactor Design',
+    title: 'Kinetic Modeling',
     description:
-      'Custom-engineered bioreactor systems for precise microbial or cell culture applications.',
+      'Physics-based simulations of chemical reaction rates and metabolic pathways.',
     bgColor: '#FFE3E3',
-    icon: '/icons/bioreactor-design.png',
+    icon: '/icons/kinetics.png',
   },
   {
-    title: 'Automation Integration',
+    title: 'Neuro-Physics Research',
     description:
-      'Advanced control systems to enhance bioreactor efficiency and data monitoring.',
+      'Exploring the electrical impulses and physical properties of neural networks.',
     bgColor: '#E4F1FF',
-    icon: '/icons/automation.png',
+    icon: '/icons/neuro-physics.png',
   },
   {
-    title: 'System Validation',
+    title: 'Sustainability Chemistry',
     description:
-      'Comprehensive testing and validation to ensure compliance with industry standards.',
+      'Developing eco-friendly chemical processes through catalytic innovation.',
     bgColor: '#FFF0E1',
-    icon: '/icons/validation.png',
-  },
-  {
-    title: 'Maintenance & Support',
-    description:
-      'Ongoing support and upgrades to keep your bioreactor systems reliable and scalable.',
-    bgColor: '#F1E4FF',
-    icon: '/icons/maintenance.png',
+    icon: '/icons/green-chem.png',
   },
 ]

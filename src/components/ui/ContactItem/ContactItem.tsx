@@ -24,8 +24,12 @@ export function ContactItem({ icon: Icon, title, detail }: ContactItemProps) {
         {Icon}
       </div>
       <div>
-        <h4 className="text-sm font-semibold text-slate-900 transition-colors duration-300 ease-out group-hover:text-emerald-600">{title}</h4>
-        <p className="text-sm text-slate-500 transition-colors duration-300 ease-out sm:text-sm hover:text-slate-700">{detail}</p>
+        <h4 className="text-sm font-semibold text-slate-900 transition-colors duration-300 ease-out group-hover:text-emerald-600">
+          {title}
+        </h4>
+        <p className="text-sm text-slate-500 transition-colors duration-300 ease-out sm:text-sm hover:text-slate-700">
+          {detail}
+        </p>
       </div>
     </div>
   )

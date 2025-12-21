@@ -7,27 +7,27 @@ import type { ProjectItem } from '@/lib/types'
 
 export const PROJECTS_DATA: ProjectItem[] = [
   {
-    title: 'TRYST 2025 – cultural fest website',
+    title: 'Project Photosynthesis 2.0',
     description:
-      "Event platform with live updates and smooth registrations for Delhi University's annual fest.",
-    image: '/images/tryst.png',
-    tags: ['Event Tech', 'University Fest', 'UI/UX'],
-    link: 'https://tryst-website.vercel.app/',
+      'Applying quantum physics to increase photon absorption efficiency in synthetic chloroplasts.',
+    image: '/images/project-1.webp',
+    tags: ['Biophysics', 'Quantum Science', 'Botany'],
+    link: '#',
   },
   {
-    title: 'SkillsYard – learning platform',
+    title: 'ChemiCompute Alpha',
     description:
-      'Skill‑based learning platform with course support, payments, and fully responsive design.',
-    image: '/images/skillsyard.png',
-    tags: ['EdTech', 'Online Learning', 'Payments'],
-    link: 'https://skillsyard.com/',
+      'A cloud platform for simulating complex organic chemical reactions before wet-lab testing.',
+    image: '/images/project-2.webp',
+    tags: ['Chemistry', 'SaaS', 'Computation'],
+    link: '#',
   },
   {
-    title: 'Cancer Heal – medical website',
+    title: 'Bio-Crystal X-Ray',
     description:
-      'Trust‑centred site highlighting services, team, and milestones with clear calls‑to‑action.',
-    image: '/images/cancerheal.png',
-    tags: ['Healthcare', 'Company Profile', 'Professional'],
-    link: 'https://cancerheal.co.in/',
+      'Advanced crystallography imaging to map the physical structure of unknown viral proteins.',
+    image: '/images/project-3.webp',
+    tags: ['Physics', 'Virology', 'Imaging'],
+    link: '#',
   },
 ]

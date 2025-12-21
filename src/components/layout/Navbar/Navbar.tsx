@@ -30,8 +30,8 @@ export default function Navbar() {
             alt="Bionex logo"
             className="h-10 w-10 rounded-full object-cover ring-1 ring-emerald-400/60 bg-slate-900"
           />
-          <div className='text-slate-950 text-lg'>
-            Bio<span className='text-green-600'>Nex</span>
+          <div className="text-slate-950 text-lg">
+            Bio<span className="text-green-600">Nex</span>
           </div>
         </Link>
 
@@ -68,8 +68,9 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div
-        className={`lg:hidden overflow-hidden border-t border-slate-800 bg-white transition-all duration-300 ${isOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
-          }`}
+        className={`lg:hidden overflow-hidden border-t border-slate-800 bg-white transition-all duration-300 ${
+          isOpen ? 'max-h-80 opacity-100' : 'max-h-0 opacity-0'
+        }`}
       >
         <div className="space-y-1 px-4 pb-4 pt-2 sm:px-6">
           {NAVIGATION_LINKS.map((link) => (

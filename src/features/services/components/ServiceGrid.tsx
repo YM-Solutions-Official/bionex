@@ -65,14 +65,13 @@ export function ServiceGrid() {
                 <Button
                   variant="primary"
                   size="sm"
-                  className="rounded-full bg-emerald-600 px-8 py-2.5 text-sm font-semibold text-white shadow-md shadow-emerald-500/30 transition-colors hover:bg-emerald-500"
+                  className="rounded-full cursor-pointer bg-emerald-600 px-8 py-2.5 text-sm font-semibold text-white shadow-md shadow-emerald-500/30 transition-colors hover:bg-emerald-500"
                 >
                   Contact us
                 </Button>
               </a>
             </div>
           </Card>
-
         </div>
       </div>
     </section>

@@ -13,7 +13,8 @@ const CARD_VARIANTS = {
     'rounded-2xl border border-slate-100 bg-white p-7 shadow-lg hover:shadow-xl',
   bordered:
     'rounded-2xl border-2 border-slate-200 bg-white p-7 hover:border-emerald-300 hover:shadow-sm',
-  ghost: 'rounded-2xl bg-slate-50 border border-slate-200 p-7 hover:bg-slate-100',
+  ghost:
+    'rounded-2xl bg-slate-50 border border-slate-200 p-7 hover:bg-slate-100',
 }
 
 /**

@@ -1,4 +1,4 @@
-import { ScrollToTop } from "@/components/scrolltop"
+import { ScrollToTop } from '@/components/scrolltop'
 
 export default function Page404() {
   return (
@@ -13,14 +13,13 @@ export default function Page404() {
         {/* Heading */}
         <div className="space-y-2">
           <h1 className="text-4xl font-extrabold text-slate-900">404</h1>
-          <p className="text-lg font-semibold text-slate-800">
-            Page not found
-          </p>
+          <p className="text-lg font-semibold text-slate-800">Page not found</p>
         </div>
 
         {/* Message */}
         <p className="text-sm text-slate-500">
-          The page you&apos;re looking for doesn&apos;t exist or may have been moved.
+          The page you&apos;re looking for doesn&apos;t exist or may have been
+          moved.
         </p>
 
         {/* Actions */}

@@ -1,12 +1,7 @@
 // src/routes/index.tsx
 import { createFileRoute } from '@tanstack/react-router'
 import { HeroSection, WayAheadSection } from '@/features/home'
-import {
-  Courses,
-  OurApproach,
-  GetStarted,
-} from '@/components/sections'
-import { ProjectGrid } from '@/features/projects'
+import { Courses, OurApproach, GetStarted } from '@/components/sections'
 import { ServiceGrid } from '@/features/services'
 import ContactUs from '@/components/ContactUs'
 
@@ -24,7 +19,7 @@ function Home() {
       <WayAheadSection />
       <Courses />
       <OurApproach />
-      <ProjectGrid />
+      {/* <ProjectGrid /> */}
       <ServiceGrid />
       <ContactUs />
       <GetStarted />

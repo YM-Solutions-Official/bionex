@@ -26,7 +26,8 @@ export function ContactForm() {
           Tell us about your project
         </h1>
         <p className="text-sm text-slate-500 sm:text-sm">
-          Fill out the form and our team will get back to you within one business day.
+          Fill out the form and our team will get back to you within one
+          business day.
         </p>
       </div>
 
@@ -78,7 +79,7 @@ export function ContactForm() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-emerald-600 disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
+            className="inline-flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-emerald-600 disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
           >
             {isSubmitting ? 'Sending…' : 'Send message'}
           </button>

@@ -42,24 +42,22 @@ export function HeroSection() {
         </p>
 
         <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-center">
-          <Link to={"/services"}>
+          <Link to={'/services'}>
             <Button
               variant="primary"
               size="md"
-              className="rounded-full bg-emerald-500 px-8 py-3 shadow-[0_0_45px_rgba(16,185,129,0.55)] hover:bg-emerald-400"
+              className="rounded-full bg-emerald-500 px-8 py-3 shadow-[0_0_45px_rgba(16,185,129,0.55)] hover:bg-emerald-400 cursor-pointer"
               icon={<ArrowRight className="h-4 w-4" />}
               iconPosition="right"
             >
               Explore solutions
             </Button>
-
           </Link>
-          <Link to={"/projects"}>
-
+          <Link to={'/projects'}>
             <Button
               variant="outline"
               size="md"
-              className="rounded-full border-slate-500/60 bg-slate-900/60 text-slate-50 backdrop-blur-sm hover:border-emerald-400 hover:text-emerald-200"
+              className="rounded-full border-slate-500/60 bg-slate-900/60 text-slate-50 backdrop-blur-sm cursor-pointer hover:border-emerald-400 hover:text-emerald-200"
             >
               View our work
             </Button>

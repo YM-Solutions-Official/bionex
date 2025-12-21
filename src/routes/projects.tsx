@@ -13,7 +13,7 @@ export const Route = createFileRoute('/projects')({
  */
 function Projects() {
   return (
-    <main className='mt-10'>
+    <main className="mt-10">
       <ScrollToTop />
       <ProjectGrid />
       <GetStarted />

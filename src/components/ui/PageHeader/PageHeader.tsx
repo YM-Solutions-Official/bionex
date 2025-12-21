@@ -16,11 +16,7 @@ export interface PageHeaderProps {
  * Professional page header with title, description, and optional badge
  * Used on all pages except the home page
  */
-export function PageHeader({
-  title,
-  description,
-  badge,
-}: PageHeaderProps) {
+export function PageHeader({ title, description, badge }: PageHeaderProps) {
   return (
     <section className="relative w-full overflow-hidden bg-linear-to-b from-slate-900 to-slate-800 py-20 sm:py-28 lg:py-32 font-sans">
       {/* Decorative background elements */}

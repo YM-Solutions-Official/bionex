@@ -8,15 +8,6 @@ import type { FooterSection, ContactInfo, SocialLink } from '@/lib/types'
 
 export const FOOTER_SECTIONS: FooterSection[] = [
   {
-    title: 'Solutions',
-    links: [
-      { label: 'Bioreactors', href: '/services' },
-      { label: 'Automation', href: '/services' },
-      { label: 'Software', href: '/services' },
-      { label: 'Consulting', href: '/contact' },
-    ],
-  },
-  {
     title: 'Company',
     links: [
       { label: 'About us', href: '/about' },
