@@ -9,7 +9,7 @@ export default function ContactUs() {
         {/* Left */}
         <div className="space-y-8">
           <div>
-            <span className="text-xs font-medium uppercase tracking-[0.2em] text-emerald-600">
+            <span className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-600">
               Get in touch
             </span>
             <h2 className="mt-3 text-3xl font-semibold text-slate-900 sm:text-4xl">

@@ -2,6 +2,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { ProjectGrid } from '@/features/projects'
 import { GetStarted } from '@/components/sections'
+import { ScrollToTop } from '@/components/scrolltop'
 
 export const Route = createFileRoute('/projects')({
   component: Projects,
@@ -12,7 +13,8 @@ export const Route = createFileRoute('/projects')({
  */
 function Projects() {
   return (
-    <main>
+    <main className='mt-10'>
+      <ScrollToTop />
       <ProjectGrid />
       <GetStarted />
     </main>

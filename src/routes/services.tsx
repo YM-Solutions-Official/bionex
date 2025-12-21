@@ -2,6 +2,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { ServiceGrid } from '@/features/services'
 import { GetStarted } from '@/components/sections'
+import { ScrollToTop } from '@/components/scrolltop'
 
 export const Route = createFileRoute('/services')({
   component: Services,
@@ -12,7 +13,8 @@ export const Route = createFileRoute('/services')({
  */
 function Services() {
   return (
-    <main>
+    <main className='mt-10'>
+      <ScrollToTop />
       <ServiceGrid />
       <GetStarted />
     </main>

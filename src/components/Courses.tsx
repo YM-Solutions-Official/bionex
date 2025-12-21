@@ -9,7 +9,7 @@ export default function Courses() {
         {/* Header */}
         <div className="mb-14 flex flex-col items-start gap-10 lg:flex-row lg:items-center">
           <div className="w-full lg:w-1/2 space-y-4">
-            <span className="text-xs font-medium uppercase tracking-[0.2em] text-emerald-600">
+            <span className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-600">
               Learning Hub
             </span>
             <h2 className="text-3xl font-semibold text-slate-900 sm:text-4xl lg:text-4xl">
@@ -58,7 +58,7 @@ export default function Courses() {
                   {course.list.map((item, i) => (
                     <div key={i} className="flex items-start gap-2">
                       <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-emerald-500" />
-                      <span className="text-xs text-slate-700 sm:text-sm">
+                      <span className="text-sm text-slate-700 sm:text-sm">
                         {item}
                       </span>
                     </div>

@@ -42,7 +42,7 @@ export default function ProjectCard({
           {tags.map((tag: string, i: number) => (
             <span
               key={i}
-              className="text-xs border border-emerald-500 text-emerald-600 px-2 py-0.5 rounded-full hover:bg-emerald-50 hover:text-emerald-700 hover:border-emerald-600 transition"
+              className="text-sm border border-emerald-500 text-emerald-600 px-2 py-0.5 rounded-full hover:bg-emerald-50 hover:text-emerald-700 hover:border-emerald-600 transition"
             >
               {tag}
             </span>

@@ -78,7 +78,7 @@ export function ServiceCard({
     <Card {...cardProps}>
       <div>
         {badge && (
-          <span className="mb-3 inline-block rounded-full bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-600">
+          <span className="mb-3 inline-block rounded-full bg-emerald-50 px-3 py-1 text-sm font-medium text-emerald-600">
             {badge}
           </span>
         )}

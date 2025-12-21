@@ -14,7 +14,7 @@ export function ContactInfo() {
   return (
     <div className="space-y-8">
       <div>
-        <span className="text-xs font-medium uppercase tracking-[0.2em] text-emerald-600">
+        <span className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-600">
           Get in touch
         </span>
         <h2 className="mt-3 text-3xl font-semibold text-slate-900 sm:text-4xl">
@@ -69,7 +69,7 @@ function ContactItem({ icon: Icon, title, detail }: ContactItemProps) {
       </div>
       <div>
         <h4 className="text-sm font-semibold text-slate-900">{title}</h4>
-        <p className="text-xs text-slate-500 sm:text-sm">{detail}</p>
+        <p className="text-sm text-slate-500 sm:text-sm">{detail}</p>
       </div>
     </div>
   )

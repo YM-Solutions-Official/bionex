@@ -25,7 +25,7 @@ export function ContactForm() {
         <h1 className="text-lg font-semibold text-slate-900 sm:text-xl">
           Tell us about your project
         </h1>
-        <p className="text-xs text-slate-500 sm:text-sm">
+        <p className="text-sm text-slate-500 sm:text-sm">
           Fill out the form and our team will get back to you within one business day.
         </p>
       </div>
@@ -82,7 +82,7 @@ export function ContactForm() {
           >
             {isSubmitting ? 'Sending…' : 'Send message'}
           </button>
-          <p className="text-[11px] text-slate-400 sm:text-xs">
+          <p className="text-[11px] text-slate-400 sm:text-sm">
             By submitting, you agree to our terms and privacy policy.
           </p>
         </div>

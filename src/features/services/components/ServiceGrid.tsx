@@ -51,7 +51,7 @@ export function ServiceGrid() {
           <Card
             variant="default"
             hover={false}
-            className="relative flex flex-col items-center justify-center rounded-3xl border border-emerald-100 bg-gradient-to-br from-emerald-50 via-emerald-50 to-emerald-100/60 p-8 text-center shadow-sm"
+            className="relative flex flex-col items-center justify-center rounded-3xl border border-emerald-100 bg-linear-to-br from-emerald-50 via-emerald-50 to-emerald-100/60 p-8 text-center shadow-sm"
           >
             <div className="pointer-events-none absolute inset-0 rounded-3xl bg-white/40" />
             <div className="relative z-10 space-y-4">
@@ -61,13 +61,15 @@ export function ServiceGrid() {
               <p className="text-sm text-emerald-900/70">
                 Tell us what you need and we will craft a plan for you.
               </p>
-              <Button
-                variant="primary"
-                size="sm"
-                className="rounded-full bg-emerald-600 px-8 py-2.5 text-sm font-semibold text-white shadow-md shadow-emerald-500/30 transition-colors hover:bg-emerald-500"
-              >
-                Contact us
-              </Button>
+              <a href="/contact">
+                <Button
+                  variant="primary"
+                  size="sm"
+                  className="rounded-full bg-emerald-600 px-8 py-2.5 text-sm font-semibold text-white shadow-md shadow-emerald-500/30 transition-colors hover:bg-emerald-500"
+                >
+                  Contact us
+                </Button>
+              </a>
             </div>
           </Card>
 
