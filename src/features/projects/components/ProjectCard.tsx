@@ -14,9 +14,6 @@ interface ProjectCardProps {
   link: string
 }
 
-/**
- * Individual project card with image, description, and CTA
- */
 export default function ProjectCard({
   title,
   description,
@@ -30,7 +27,7 @@ export default function ProjectCard({
         <img
           src={image || '/placeholder.svg'}
           alt={title}
-          className="h-full w-full object-cover group-hover:scale-105 transition-transform"
+          className="h-full w-full object-fill object-center group-hover:scale-105 transition-transform"
         />
         <div className="absolute inset-0 bg-linear-to-t from-emerald-500 to-transparent opacity-0 group-hover:opacity-100 transition duration-500" />
       </div>

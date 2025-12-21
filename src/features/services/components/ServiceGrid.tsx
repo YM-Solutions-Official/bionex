@@ -47,28 +47,30 @@ export function ServiceGrid() {
           ))}
 
           {/* CTA Card */}
+          {/* CTA Card */}
           <Card
             variant="default"
             hover={false}
-            className="relative flex flex-col items-center justify-center overflow-hidden bg-slate-900 p-8 text-center"
+            className="relative flex flex-col items-center justify-center rounded-3xl border border-emerald-100 bg-gradient-to-br from-emerald-50 via-emerald-50 to-emerald-100/60 p-8 text-center shadow-sm"
           >
-            <div className="pointer-events-none absolute inset-0 bg-emerald-500/20 blur-3xl" />
+            <div className="pointer-events-none absolute inset-0 rounded-3xl bg-white/40" />
             <div className="relative z-10 space-y-4">
-              <h3 className="text-xl font-semibold text-white">
+              <h3 className="text-xl font-semibold text-emerald-900">
                 Need custom services?
               </h3>
-              <p className="text-sm text-slate-300">
+              <p className="text-sm text-emerald-900/70">
                 Tell us what you need and we will craft a plan for you.
               </p>
               <Button
                 variant="primary"
                 size="sm"
-                className="rounded-lg bg-emerald-500 px-6 py-2 text-sm font-semibold text-slate-900 hover:bg-emerald-400"
+                className="rounded-full bg-emerald-600 px-8 py-2.5 text-sm font-semibold text-white shadow-md shadow-emerald-500/30 transition-colors hover:bg-emerald-500"
               >
                 Contact us
               </Button>
             </div>
           </Card>
+
         </div>
       </div>
     </section>
