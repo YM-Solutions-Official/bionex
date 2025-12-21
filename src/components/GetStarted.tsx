@@ -28,7 +28,7 @@ export default function GetStarted() {
           Let&apos;s build the future
         </span>
 
-        <h2 className="text-3xl font-semibold leading-tight text-slate-900 sm:text-4xl lg:text-5xl">
+        <h2 className="text-3xl font-semibold leading-tight text-slate-900 sm:text-4xl lg:text-4xl">
           Ready to revolutionize your{' '}
           <span className="text-emerald-600">bioprocessing?</span>
         </h2>

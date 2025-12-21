@@ -12,7 +12,7 @@ export default function Page404() {
 
         {/* Heading */}
         <div className="space-y-2">
-          <h1 className="text-5xl font-extrabold text-slate-900">404</h1>
+          <h1 className="text-4xl font-extrabold text-slate-900">404</h1>
           <p className="text-lg font-semibold text-slate-800">
             Page not found
           </p>

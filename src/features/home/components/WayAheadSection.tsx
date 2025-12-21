@@ -19,7 +19,7 @@ export function WayAheadSection() {
             <span className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-600">
               Way Ahead
             </span>
-            <h2 className="mt-3 text-2xl font-semibold text-slate-900 sm:text-3xl lg:text-4xl xl:text-5xl">
+            <h2 className="mt-3 text-2xl font-semibold text-slate-900 sm:text-3xl lg:text-4xl xl:text-4xl">
               Pioneering frugal innovation.
             </h2>
             <p className="mt-4 text-sm text-slate-600 sm:text-base max-w-xl">

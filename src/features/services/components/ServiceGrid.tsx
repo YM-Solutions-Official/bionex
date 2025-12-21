@@ -15,7 +15,7 @@ export function ServiceGrid() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mx-auto mb-12 max-w-2xl text-center">
-          <h2 className="text-3xl font-semibold text-slate-900 sm:text-4xl lg:text-5xl">
+          <h2 className="text-3xl font-semibold text-slate-900 sm:text-4xl lg:text-4xl">
             Our Services
           </h2>
           <p className="mt-4 text-sm text-slate-600 sm:text-lg">

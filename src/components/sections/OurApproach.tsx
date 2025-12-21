@@ -28,7 +28,7 @@ export function OurApproach() {
           <span className="text-sm font-medium uppercase tracking-[0.2em] text-emerald-400">
             How we work
           </span>
-          <h2 className="mt-3 text-3xl font-semibold text-white sm:text-4xl lg:text-5xl">
+          <h2 className="mt-3 text-3xl font-semibold text-white sm:text-4xl lg:text-4xl">
             Our approach
           </h2>
           <p className="mt-4 text-sm text-slate-300 sm:text-base">

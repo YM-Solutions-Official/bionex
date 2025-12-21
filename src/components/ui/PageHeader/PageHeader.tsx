@@ -39,7 +39,7 @@ export function PageHeader({
         )}
 
         {/* Title */}
-        <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl transition-all duration-300 ease-out">
+        <h1 className="text-4xl font-bold leading-tight text-white sm:text-4xl lg:text-6xl transition-all duration-300 ease-out">
           {title}
         </h1>
 

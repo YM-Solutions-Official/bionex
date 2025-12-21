@@ -31,7 +31,7 @@ export function HeroSection() {
           Next‑gen bioprocessing
         </span>
 
-        <h1 className="text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
+        <h1 className="text-4xl font-semibold leading-tight tracking-tight text-white sm:text-4xl lg:text-6xl">
           Innovate Bioprocessing with{' '}
           <span className="text-emerald-400">Precision Technology</span>
         </h1>
