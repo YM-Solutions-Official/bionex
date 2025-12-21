@@ -4,6 +4,7 @@ import { HeroSection, WayAheadSection } from '@/features/home'
 import { Courses, OurApproach, GetStarted } from '@/components/sections'
 import { ServiceGrid } from '@/features/services'
 import ContactUs from '@/components/ContactUs'
+import { ProjectGrid } from '@/features'
 
 export const Route = createFileRoute('/')({
   component: Home,
@@ -19,7 +20,7 @@ function Home() {
       <WayAheadSection />
       <Courses />
       <OurApproach />
-      {/* <ProjectGrid /> */}
+      <ProjectGrid />
       <ServiceGrid />
       <ContactUs />
       <GetStarted />
