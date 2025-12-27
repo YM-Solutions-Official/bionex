@@ -1,6 +1,6 @@
 /**
  * @file features/projects/components/ProjectCard.tsx
- * @description Individual project card component
+ * @description Individual project card component with semantic HTML
  */
 
 import { Link } from '@tanstack/react-router'
@@ -10,7 +10,7 @@ interface ProjectCardProps {
   title: string
   description: string
   image: string
-  tags: string[]
+  tags: Array<string>
   link: string
 }
 
@@ -22,12 +22,14 @@ export default function ProjectCard({
   link,
 }: ProjectCardProps) {
   return (
-    <div className="group w-92.5 relative max-sm:w-[90%] h-105 rounded-2xl border border-gray-200 overflow-hidden bg-card shadow-sm hover:shadow-md hover:-translate-y-1 transition duration-500">
+    <article className="group w-92.5 relative max-sm:w-[90%] h-105 rounded-2xl border border-gray-200 overflow-hidden bg-card shadow-sm hover:shadow-md hover:-translate-y-1 transition duration-500">
       <div className="relative h-54 overflow-hidden">
         <img
           src={image || '/placeholder.svg'}
-          alt={title}
+          alt={`${title} - Featured biotech project showcasing precision engineering`}
           className="h-full w-full object-fill object-center group-hover:scale-105 transition-transform"
+          width={400}
+          height={250}
         />
         <div className="absolute inset-0 bg-linear-to-t from-emerald-500 to-transparent opacity-0 group-hover:opacity-100 transition duration-500" />
       </div>
@@ -55,6 +57,6 @@ export default function ProjectCard({
           </Link>
         </div>
       </div>
-    </div>
+    </article>
   )
 }

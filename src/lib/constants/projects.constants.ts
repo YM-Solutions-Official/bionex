@@ -5,7 +5,7 @@
 
 import type { ProjectItem } from '@/lib/types'
 
-export const PROJECTS_DATA: ProjectItem[] = [
+export const PROJECTS_DATA: Array<ProjectItem> = [
   {
     title: 'Project Photosynthesis 2.0',
     description:

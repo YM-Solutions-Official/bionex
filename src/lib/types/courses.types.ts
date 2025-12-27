@@ -10,5 +10,5 @@ export interface CourseItem {
   bg: string
   title: string
   description: string
-  list: string[]
+  list: Array<string>
 }

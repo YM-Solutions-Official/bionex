@@ -1,0 +1,36 @@
+# Bionex Robots.txt - SEO Configuration
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow sensitive paths (if any)
+Disallow: /admin
+Disallow: /private
+Disallow: /.env
+Disallow: /node_modules
+
+# Sitemap location
+Sitemap: https://bionex.com/sitemap.xml
+
+# Crawl delay for respect (optional, adjust as needed)
+Crawl-delay: 1
+
+# Allow specific search engines (typically allowed by default)
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /

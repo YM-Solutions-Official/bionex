@@ -1,6 +1,6 @@
 import { CheckCircle2 } from 'lucide-react'
-import { COURSES_DATA } from '@/lib/constants/courses.constants'
 import { Card } from './ui/Card'
+import { COURSES_DATA } from '@/lib/constants/courses.constants'
 
 export default function Courses() {
   return (

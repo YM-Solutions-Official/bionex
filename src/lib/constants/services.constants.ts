@@ -4,7 +4,7 @@
  */
 
 import { FlaskConical, Globe2, PanelsTopLeft, ShoppingBag } from 'lucide-react'
-import type { ServiceListItem, Service } from '@/lib/types'
+import type { Service, ServiceListItem } from '@/lib/types'
 
 /** Header section services list */
 export const HEADER_SERVICES = [
@@ -17,7 +17,7 @@ export const HEADER_SERVICES = [
 ]
 
 /** Main services grid items */
-export const SERVICES_LIST: ServiceListItem[] = [
+export const SERVICES_LIST: Array<ServiceListItem> = [
   {
     title: 'Biophysics Nexus',
     desc: 'Studying biological systems through physics.',
@@ -45,7 +45,7 @@ export const SERVICES_LIST: ServiceListItem[] = [
 ]
 
 /** Detailed services data for Bionex */
-export const SERVICES_DATA: Service[] = [
+export const SERVICES_DATA: Array<Service> = [
   {
     title: 'Spectroscopic Analysis',
     description:

@@ -1,6 +1,6 @@
 /**
  * @file components/sections/OurApproach.tsx
- * @description Our approach methodology section
+ * @description Our approach methodology section with semantic HTML
  */
 
 import { APPROACH_STEPS } from '@/lib/constants/approach.constants'
@@ -16,8 +16,10 @@ export function OurApproach() {
       <div className="absolute inset-0 -z-10">
         <img
           src="/images/ourapproach.jpg"
-          alt="Background"
+          alt="Background laboratory and research facilities"
           className="h-full w-full object-cover opacity-20"
+          width={1920}
+          height={1080}
         />
         <div className="absolute inset-0 bg-linear-to-b from-slate-950 via-slate-900/95 to-slate-900" />
       </div>
@@ -50,6 +52,7 @@ export function OurApproach() {
               >
                 <div
                   className={`mb-5 flex h-12 w-12 items-center justify-center rounded-xl text-white shadow-lg shadow-black/30 ${step.color}`}
+                  aria-hidden="true"
                 >
                   <Icon className="h-6 w-6" />
                 </div>

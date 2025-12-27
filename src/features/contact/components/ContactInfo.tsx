@@ -26,7 +26,11 @@ export function ContactInfo() {
       </div>
 
       <div className="space-y-5">
-        <ContactItem icon={Mail} title="Email us" detail="contact@projectbionex.com" />
+        <ContactItem
+          icon={Mail}
+          title="Email us"
+          detail="contact@projectbionex.com"
+        />
         <ContactItem icon={Phone} title="Call us" detail="+91 99717 49689" />
         <ContactItem
           icon={MapPin}

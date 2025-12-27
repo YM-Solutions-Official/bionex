@@ -1,22 +1,25 @@
 /**
  * @file features/home/components/HeroSection.tsx
- * @description Hero section with headline and CTA buttons
+ * @description Hero section with headline and CTA buttons - Single H1 per page
  */
 
 import { ArrowRight } from 'lucide-react'
-import { Button } from '@/components/ui'
 import { Link } from '@tanstack/react-router'
+import { Button } from '@/components/ui'
 
 /**
  * Hero section - main landing headline with call-to-action
+ * Contains the page's primary h1 tag for SEO
  */
 export function HeroSection() {
   return (
     <header className="relative flex h-screen min-h-155 w-full items-center justify-center overflow-hidden font-sans">
-      {/* Background image */}
+      {/* Background image with proper lazy loading */}
       <div
         className="absolute inset-0 -z-30 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/images/ourapproach.jpg')" }}
+        role="img"
+        aria-label="Laboratory bioprocessing equipment background"
       />
 
       {/* Edge vignette */}
@@ -31,6 +34,7 @@ export function HeroSection() {
           Next‑gen bioprocessing
         </span>
 
+        {/* Primary H1 - Only one per page for SEO */}
         <h1 className="text-4xl font-semibold leading-tight tracking-tight text-white sm:text-4xl lg:text-6xl">
           Innovate Bioprocessing with{' '}
           <span className="text-emerald-400">Precision Technology</span>

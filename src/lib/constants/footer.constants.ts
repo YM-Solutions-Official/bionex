@@ -3,10 +3,10 @@
  * @description Footer and navigation constants
  */
 
-import { MapPin, Mail, Phone } from 'lucide-react'
-import type { FooterSection, ContactInfo, SocialLink } from '@/lib/types'
+import { Mail, MapPin, Phone } from 'lucide-react'
+import type { ContactInfo, FooterSection, SocialLink } from '@/lib/types'
 
-export const FOOTER_SECTIONS: FooterSection[] = [
+export const FOOTER_SECTIONS: Array<FooterSection> = [
   {
     title: 'Company',
     links: [
@@ -17,7 +17,7 @@ export const FOOTER_SECTIONS: FooterSection[] = [
   },
 ]
 
-export const FOOTER_CONTACT_INFO: ContactInfo[] = [
+export const FOOTER_CONTACT_INFO: Array<ContactInfo> = [
   {
     icon: MapPin,
     value:
@@ -36,7 +36,7 @@ export const FOOTER_CONTACT_INFO: ContactInfo[] = [
   },
 ]
 
-export const SOCIAL_LINKS: SocialLink[] = [
+export const SOCIAL_LINKS: Array<SocialLink> = [
   { name: 'LinkedIn', href: '#', icon: '🔗' },
   { name: 'Twitter', href: '#', icon: '𝕏' },
   { name: 'GitHub', href: '#', icon: '🐙' },

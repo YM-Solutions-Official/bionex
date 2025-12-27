@@ -3,10 +3,10 @@
  * @description Learning and course constants
  */
 
-import { BarChart3, Wrench, PenTool, Table } from 'lucide-react'
+import { BarChart3, PenTool, Table, Wrench } from 'lucide-react'
 import type { CourseItem } from '@/lib/types'
 
-export const COURSES_DATA: CourseItem[] = [
+export const COURSES_DATA: Array<CourseItem> = [
   {
     icon: BarChart3,
     bg: 'bg-blue-50',

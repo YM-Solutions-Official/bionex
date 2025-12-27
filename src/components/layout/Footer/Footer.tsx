@@ -1,12 +1,12 @@
 /**
  * @file components/layout/Footer/Footer.tsx
- * @description Main footer component with links and contact info
+ * @description Main footer component with links and contact info - Semantic HTML
  */
 
 import { Link } from '@tanstack/react-router'
 import {
-  FOOTER_SECTIONS,
   FOOTER_CONTACT_INFO,
+  FOOTER_SECTIONS,
 } from '@/lib/constants/footer.constants'
 
 export default function Footer() {
@@ -14,7 +14,7 @@ export default function Footer() {
 
   return (
     <footer className="w-full border-t border-slate-200 bg-white text-slate-800 font-sans">
-      {/* Top label line */}
+      {/* Top label line -->
       <div className="border-b border-slate-200 bg-white/80">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 text-sm text-slate-500 sm:px-6">
           <span className="uppercase tracking-[0.22em] text-slate-600">
@@ -30,12 +30,14 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:py-14">
         <div className="grid gap-10 md:grid-cols-3 lg:grid-cols-3 lg:gap-12">
           {/* Brand */}
-          <div className="space-y-4 md:col-span-3 lg:col-span-1">
+          <section className="space-y-4 md:col-span-3 lg:col-span-1">
             <Link to="/" className="flex items-center gap-3">
               <img
                 src="/images/logo.jpeg"
-                alt="Bionex logo"
+                alt="Bionex company logo"
                 className="h-12 w-12 rounded-full object-cover ring-2 ring-slate-200"
+                width={48}
+                height={48}
               />
               <div className="leading-tight">
                 <p className="text-sm font-medium uppercase tracking-[0.22em] text-emerald-600">
@@ -47,34 +49,35 @@ export default function Footer() {
               High‑efficiency bioreactor systems and precision‑engineered
               solutions for the next generation of scientists.
             </p>
-          </div>
+          </section>
 
           {/* Nav sections */}
           {FOOTER_SECTIONS.map((section: any) => (
-            <div key={section.title} className="space-y-4">
+            <nav key={section.title} className="space-y-4">
               <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-900">
                 {section.title}
               </h3>
-              <nav className="flex flex-col gap-2 text-sm">
+              <ul className="flex flex-col gap-2 text-sm">
                 {section.links.map((link: any) => (
-                  <Link
-                    key={link.label}
-                    to={link.href}
-                    className="text-slate-700 transition-colors hover:text-emerald-600"
-                  >
-                    {link.label}
-                  </Link>
+                  <li key={link.label}>
+                    <Link
+                      to={link.href}
+                      className="text-slate-700 transition-colors hover:text-emerald-600"
+                    >
+                      {link.label}
+                    </Link>
+                  </li>
                 ))}
-              </nav>
-            </div>
+              </ul>
+            </nav>
           ))}
 
           {/* Contact */}
-          <div className="space-y-4">
+          <section className="space-y-4">
             <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-900">
               Contact
             </h3>
-            <div className="space-y-3 text-sm">
+            <address className="space-y-3 text-sm not-italic">
               {FOOTER_CONTACT_INFO.map(({ icon: Icon, value, href }: any) => (
                 <a
                   key={value}
@@ -87,8 +90,8 @@ export default function Footer() {
                   <span className="leading-relaxed">{value}</span>
                 </a>
               ))}
-            </div>
-          </div>
+            </address>
+          </section>
         </div>
       </div>
 
@@ -106,32 +109,36 @@ export default function Footer() {
               <div className="h-px w-4 bg-slate-200" />
               <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-300">
                 Designed by{' '}
-                <Link
-                  to="https://www.ymsolutions.in/"
+                <a
+                  href="https://www.ymsolutions.in/"
                   target="_blank"
-                  className="text-slate-900"
+                  rel="noopener noreferrer"
+                  className="text-slate-900 hover:text-emerald-600 transition-colors"
+                  aria-label="YM Solutions website"
                 >
                   YM Solutions
-                </Link>
+                </a>
               </p>
               <div className="h-px w-4 bg-slate-200" />
             </div>
 
             {/* 3. Legal Links - Right */}
-            <div className="flex justify-center gap-6 text-xs font-medium text-slate-500 md:justify-end">
-              <Link
-                to="/service"
+            <nav className="flex justify-center gap-6 text-xs font-medium text-slate-500 md:justify-end">
+              <a
+                href="/service"
                 className="transition-all hover:text-emerald-600"
+                aria-label="Terms of service"
               >
                 Terms
-              </Link>
-              <Link
-                to="/privacy"
+              </a>
+              <a
+                href="/privacy"
                 className="transition-all hover:text-emerald-600"
+                aria-label="Privacy policy"
               >
                 Privacy
-              </Link>
-            </div>
+              </a>
+            </nav>
           </div>
         </div>
       </div>

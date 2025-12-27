@@ -3,10 +3,10 @@
  * @description Approach steps and strategy constants
  */
 
-import { Lightbulb, Users, Rocket, Cpu, FlaskConical } from 'lucide-react'
-import type { ApproachStep, WayAheadCard, CTAButton } from '@/lib/types'
+import { Cpu, FlaskConical, Lightbulb, Rocket, Users } from 'lucide-react'
+import type { ApproachStep, CTAButton, WayAheadCard } from '@/lib/types'
 
-export const APPROACH_STEPS: ApproachStep[] = [
+export const APPROACH_STEPS: Array<ApproachStep> = [
   {
     icon: Users,
     title: 'Hypothesize',
@@ -30,7 +30,7 @@ export const APPROACH_STEPS: ApproachStep[] = [
   },
 ]
 
-export const WAY_AHEAD_CARDS: WayAheadCard[] = [
+export const WAY_AHEAD_CARDS: Array<WayAheadCard> = [
   {
     icon: Cpu,
     title: 'Nanobiotechnology',
@@ -45,7 +45,7 @@ export const WAY_AHEAD_CARDS: WayAheadCard[] = [
     color: 'text-teal-600',
   },
 ]
-export const CTA_BUTTONS: CTAButton[] = [
+export const CTA_BUTTONS: Array<CTAButton> = [
   {
     text: 'Schedule a demo',
     primary: true,

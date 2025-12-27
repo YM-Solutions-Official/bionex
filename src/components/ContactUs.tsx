@@ -1,7 +1,8 @@
 import { CheckCircle2, Mail, MapPin, Phone } from 'lucide-react'
-import { CONTACT_REASONS } from '@/lib/constants/contact.constants'
 import { Card, ContactItem } from './ui'
+import { CONTACT_REASONS } from '@/lib/constants/contact.constants'
 import { ContactForm } from '@/features'
+
 export default function ContactUs() {
   return (
     <section className="w-full bg-white py-16 lg:py-24">
@@ -20,7 +21,7 @@ export default function ContactUs() {
             </p>
           </div>
 
-          <div className="space-y-5">
+          <address className="space-y-5 not-italic">
             <ContactItem
               icon={<Mail className="h-5 w-5" />}
               title="Email us"
@@ -36,12 +37,12 @@ export default function ContactUs() {
               title="Visit us"
               detail="Research Park, IIT Delhi"
             />
-          </div>
+          </address>
 
           <Card variant="ghost" hover={false}>
-            <h4 className="mb-3 text-sm font-semibold text-slate-900 sm:text-base">
+            <h3 className="mb-3 text-sm font-semibold text-slate-900 sm:text-base">
               Why choose us
-            </h4>
+            </h3>
             <ul className="space-y-2">
               {CONTACT_REASONS.map((item) => (
                 <li

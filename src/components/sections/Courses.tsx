@@ -1,6 +1,6 @@
 /**
  * @file components/sections/Courses.tsx
- * @description Learning and courses section
+ * @description Learning and courses section with semantic HTML
  */
 
 import { CheckCircle2 } from 'lucide-react'
@@ -29,18 +29,20 @@ export function Courses() {
             </p>
           </div>
 
-          <div className="relative h-65 w-full overflow-hidden rounded-2xl bg-slate-900 lg:w-1/2">
+          <figure className="relative h-65 w-full overflow-hidden rounded-2xl bg-slate-900 lg:w-1/2">
             <img
               src="/images/bio.jpg"
-              alt="Learning"
+              alt="Professional learning laboratory setup with precision instrumentation"
               className="h-full w-full object-cover"
+              width={500}
+              height={375}
             />
-            <div className="absolute inset-0 flex items-end bg-linear-to-t from-slate-950/70 to-transparent p-6">
+            <figcaption className="absolute inset-0 flex items-end bg-linear-to-t from-slate-950/70 to-transparent p-6">
               <p className="text-sm font-medium text-white sm:text-base">
                 Designed with industry experts.
               </p>
-            </div>
-          </div>
+            </figcaption>
+          </figure>
         </div>
 
         {/* Cards */}
@@ -49,29 +51,32 @@ export function Courses() {
             const Icon = course.icon
             return (
               <Card key={idx} variant="default" hover>
-                <div
-                  className={`mb-5 inline-flex h-11 w-11 items-center justify-center rounded-xl ${course.bg} group-hover:scale-105 transition-transform`}
-                >
-                  <Icon className="h-6 w-6" />
-                </div>
+                <article>
+                  <div
+                    className={`mb-5 inline-flex h-11 w-11 items-center justify-center rounded-xl ${course.bg} group-hover:scale-105 transition-transform`}
+                    aria-hidden="true"
+                  >
+                    <Icon className="h-6 w-6" />
+                  </div>
 
-                <h3 className="mb-2 text-lg font-semibold text-slate-900">
-                  {course.title}
-                </h3>
-                <p className="mb-4 text-sm text-slate-600">
-                  {course.description}
-                </p>
+                  <h3 className="mb-2 text-lg font-semibold text-slate-900">
+                    {course.title}
+                  </h3>
+                  <p className="mb-4 text-sm text-slate-600">
+                    {course.description}
+                  </p>
 
-                <div className="mt-4 space-y-2 border-t border-slate-100 pt-4">
-                  {course.list.map((item: string, i: number) => (
-                    <div key={i} className="flex items-start gap-2">
-                      <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-emerald-500" />
-                      <span className="text-sm text-slate-700 sm:text-sm">
-                        {item}
-                      </span>
-                    </div>
-                  ))}
-                </div>
+                  <div className="mt-4 space-y-2 border-t border-slate-100 pt-4">
+                    {course.list.map((item: string, i: number) => (
+                      <div key={i} className="flex items-start gap-2">
+                        <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-emerald-500" />
+                        <span className="text-sm text-slate-700 sm:text-sm">
+                          {item}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </article>
               </Card>
             )
           })}

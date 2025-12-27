@@ -4,10 +4,11 @@
  */
 
 import { SERVICES_LIST } from '@/lib/constants/services.constants'
-import { Card, Button } from '@/components/ui'
+import { Button, Card } from '@/components/ui'
 
 /**
  * Grid displaying main service offerings
+ * Uses semantic section and proper heading hierarchy
  */
 export function ServiceGrid() {
   return (
@@ -32,9 +33,10 @@ export function ServiceGrid() {
               hover
               className="group flex h-full flex-col justify-between"
             >
-              <div>
+              <article>
                 <div
                   className={`mb-5 flex h-14 w-14 items-center justify-center rounded-2xl ${bg} transition-transform group-hover:scale-105`}
+                  aria-hidden="true"
                 >
                   <Icon className="h-7 w-7" />
                 </div>
@@ -42,11 +44,10 @@ export function ServiceGrid() {
                   {title}
                 </h3>
                 <p className="text-sm text-slate-600">{desc}</p>
-              </div>
+              </article>
             </Card>
           ))}
 
-          {/* CTA Card */}
           {/* CTA Card */}
           <Card
             variant="default"

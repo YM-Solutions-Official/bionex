@@ -7,6 +7,6 @@ export interface ProjectItem {
   title: string
   description: string
   image: string
-  tags: string[]
+  tags: Array<string>
   link: string
 }

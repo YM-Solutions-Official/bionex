@@ -5,7 +5,7 @@
 
 import type { EventStat } from '@/lib/types'
 
-export const EVENT_STATS: EventStat[] = [
+export const EVENT_STATS: Array<EventStat> = [
   {
     icon: '🔬',
     label: 'Experiments Conducted',

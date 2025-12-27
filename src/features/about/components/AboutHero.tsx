@@ -1,6 +1,6 @@
 /**
  * @file features/about/components/AboutHero.tsx
- * @description About page hero section
+ * @description About page hero section - Proper heading hierarchy
  */
 
 import { CheckCircle2 } from 'lucide-react'
@@ -9,6 +9,7 @@ import { Card } from '@/components/ui'
 
 /**
  * About page hero and feature section
+ * Uses h1 for main title (only on about page)
  */
 export function AboutHero() {
   return (
@@ -35,9 +36,9 @@ export function AboutHero() {
           </p>
 
           <Card variant="ghost" hover={false}>
-            <h3 className="mb-4 text-base font-semibold text-slate-900 sm:text-lg">
+            <h2 className="mb-4 text-base font-semibold text-slate-900 sm:text-lg">
               What we do
-            </h3>
+            </h2>
             <ul className="grid grid-cols-1 gap-3 text-sm text-slate-700 sm:grid-cols-2">
               {HEADER_SERVICES.map((service: string) => (
                 <li key={service} className="flex items-start gap-2">
@@ -54,13 +55,17 @@ export function AboutHero() {
           <div className="relative h-85 w-full max-w-md sm:h-100 lg:h-110">
             <img
               src="/images/bio.jpg"
-              alt="Automation setup"
+              alt="Laboratory automation and bioreactor equipment setup"
               className="relative z-10 h-full w-full rounded-2xl object-cover shadow-2xl"
+              width={500}
+              height={500}
             />
             <img
               src="/images/bioaboutus.jpg"
-              alt="Team at work"
+              alt="Bionex team working with precision bioprocessing equipment"
               className="absolute bottom-4 left-1/2 z-20 h-32 w-3/4 -translate-x-1/2 rounded-xl border-4 border-white object-cover shadow-[0_18px_45px_rgba(15,23,42,0.35)] sm:bottom-6 sm:left-6 sm:h-46 sm:w-2/3 sm:translate-x-0 lg:bottom-8 lg:-left-6"
+              width={400}
+              height={250}
             />
           </div>
         </div>

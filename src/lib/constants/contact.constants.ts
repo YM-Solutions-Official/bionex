@@ -5,7 +5,7 @@
 
 import type { ContactMethod, FormField } from '@/lib/types'
 
-export const CONTACT_METHODS: ContactMethod[] = [
+export const CONTACT_METHODS: Array<ContactMethod> = [
   {
     icon: '📩',
     title: 'Email us at',
@@ -25,7 +25,7 @@ export const CONTACT_REASONS = [
   'Rapid deployment and dependable ongoing maintenance',
 ]
 
-export const FORM_FIELDS: FormField[] = [
+export const FORM_FIELDS: Array<FormField> = [
   { placeholder: 'Enter your name', type: 'text', width: '45.5%' },
   { placeholder: 'Enter your last name', type: 'text', width: '45.5%' },
   { placeholder: 'Enter your email', type: 'text', width: '93.5%' },

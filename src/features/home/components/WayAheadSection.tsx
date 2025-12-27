@@ -62,8 +62,10 @@ export function WayAheadSection() {
             <div className="aspect-4/3 overflow-hidden rounded-2xl shadow-2xl">
               <img
                 src="/images/bioaboutus.jpg"
-                alt="Lab equipment"
+                alt="Advanced laboratory bioprocessing equipment and research facilities"
                 className="h-full w-full object-cover"
+                width={500}
+                height={375}
               />
             </div>
 
@@ -72,8 +74,10 @@ export function WayAheadSection() {
               <div className="overflow-hidden rounded-xl border-4 border-white shadow-[0_18px_45px_rgba(15,23,42,0.4)]">
                 <img
                   src="/images/getstarted.jpg"
-                  alt="Optics experiment"
+                  alt="Precision optical instrumentation for bioprocessing analysis"
                   className="h-32 w-full object-cover sm:h-40 md:h-44"
+                  width={400}
+                  height={175}
                 />
               </div>
             </div>

@@ -1,15 +1,37 @@
 {
   "short_name": "Bionex",
-  "name": "Bionex",
+  "name": "Bionex - Bioprocessing & Bioreactor Solutions",
+  "description": "High-efficiency bioprocessing solutions with precision bioreactor systems and intelligent automation",
   "icons": [
     {
-      "src": "logo.jpeg",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "/images/logo.jpeg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/logo.jpeg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "orientation": "portrait-primary",
+  "theme_color": "#10b981",
+  "background_color": "#ffffff",
+  "categories": ["business", "technology", "science"],
+  "screenshots": [
+    {
+      "src": "/images/ourapproach.jpg",
+      "sizes": "540x720",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/images/bio.jpg",
+      "sizes": "1280x720",
+      "form_factor": "wide"
+    }
+  ]
 }

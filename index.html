@@ -1,13 +1,95 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Meta Tags - Character Set & Viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/images/logo.jpeg" />
-    <meta name="description" content="project bionex" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Meta Tags - SEO Basics -->
+    <meta
+      name="description"
+      content="High-efficiency bioprocessing solutions. Bionex delivers cutting-edge bioreactor systems and intelligent automation engineered for precision and scalability."
+    />
+    <meta
+      name="keywords"
+      content="bioreactor, bioprocessing, automation, lab systems, precision engineering, biotech solutions"
+    />
+    <meta name="author" content="Bionex" />
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+
+    <!-- Meta Tags - Open Graph (Social Sharing) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Bionex" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Meta Tags - Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@bionex" />
+
+    <!-- Canonical URL (Updated per page via React) -->
+    <link rel="canonical" href="https://bionex.com/" />
+
+    <!-- Icons & PWA -->
+    <link rel="icon" href="/images/logo.jpeg" type="image/jpeg" />
     <link rel="apple-touch-icon" href="/images/logo.jpeg" />
     <link rel="manifest" href="/manifest.json" />
-    <title>bionex</title>
+
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#10b981" />
+
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Organization Schema (Global) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Bionex",
+        "url": "https://bionex.com",
+        "logo": "https://bionex.com/images/logo.jpeg",
+        "description": "High-efficiency bioprocessing and bioreactor solutions engineered for precision and innovation",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "KH. NO. 134/10 & 134/11, Ground Floor Street No. 75, A Blk‑B Sant Nagar Village, Burari",
+          "addressLocality": "Delhi",
+          "postalCode": "110084",
+          "addressCountry": "IN"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-99717-49689",
+          "contactType": "Customer Support",
+          "email": "contact@projectbionex.com"
+        },
+        "sameAs": ["https://www.linkedin.com/company/bionex"]
+      }
+    </script>
+
+    <!-- Website Schema (Global) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Bionex",
+        "url": "https://bionex.com",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://bionex.com/search?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+
+    <title>Bionex - Next-Gen Bioprocessing Solutions</title>
   </head>
   <body>
     <div id="app"></div>

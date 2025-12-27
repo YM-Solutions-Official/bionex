@@ -8,6 +8,8 @@
  * @param classes - Variable list of class name strings or falsy values
  * @returns Merged class name string
  */
-export function cn(...classes: (string | undefined | null | false)[]): string {
+export function cn(
+  ...classes: Array<string | undefined | null | false>
+): string {
   return classes.filter(Boolean).join(' ')
 }

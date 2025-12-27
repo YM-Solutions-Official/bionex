@@ -2,12 +2,40 @@
 import { createFileRoute } from '@tanstack/react-router'
 import { ContactForm, ContactInfo } from '@/features/contact'
 import { ScrollToTop } from '@/components/scrolltop'
+import {
+  generateBreadcrumbSchema,
+  generateLocalBusinessSchema,
+  generateWebPageSchema,
+  useSchemaMarkup,
+} from '@/lib/seo'
 
 export const Route = createFileRoute('/contact')({
   component: Contact,
 })
 
 function Contact() {
+  // Inject breadcrumb schema
+  useSchemaMarkup(
+    generateBreadcrumbSchema([
+      { name: 'Home', url: 'https://bionex.com' },
+      { name: 'Contact', url: 'https://bionex.com/contact' },
+    ]),
+    'breadcrumb-contact',
+  )
+
+  // Inject webpage schema
+  useSchemaMarkup(
+    generateWebPageSchema(
+      'Contact Bionex - Get Started with Bioprocessing Solutions',
+      'Ready to revolutionize your bioprocessing? Contact Bionex today to schedule a demo or discuss your project.',
+      'https://bionex.com/contact',
+    ),
+    'webpage-contact',
+  )
+
+  // Inject local business schema for better local SEO
+  useSchemaMarkup(generateLocalBusinessSchema(), 'local-business')
+
   return (
     <main className="bg-white">
       <ScrollToTop />
