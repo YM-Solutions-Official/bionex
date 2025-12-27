@@ -24,12 +24,12 @@ export default function ContactUs() {
             <ContactItem
               icon={<Mail className="h-5 w-5" />}
               title="Email us"
-              detail="hello@bionex.com"
+              detail="contact@projectbionex.com"
             />
             <ContactItem
               icon={<Phone className="h-5 w-5" />}
               title="Call us"
-              detail="+91 98765 43210"
+              detail="+91 99717 49689"
             />
             <ContactItem
               icon={<MapPin className="h-5 w-5" />}

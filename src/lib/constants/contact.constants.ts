@@ -9,12 +9,12 @@ export const CONTACT_METHODS: ContactMethod[] = [
   {
     icon: '📩',
     title: 'Email us at',
-    detail: 'contact@bionext.com',
+    detail: 'contact@projectbbionex.com',
   },
   {
     icon: '📞',
     title: 'Call us at',
-    detail: '+91 83102 46281',
+    detail: '+91 99717 49689',
   },
 ]
 

@@ -26,13 +26,13 @@ export const FOOTER_CONTACT_INFO: ContactInfo[] = [
   },
   {
     icon: Mail,
-    value: 'official.bionex@gmail.com',
-    href: 'mailto:official.bionex@gmail.com',
+    value: 'contact@projecctbionex.com',
+    href: 'mailto:contact@projecctbionex.com',
   },
   {
     icon: Phone,
-    value: '+91 98765 43210',
-    href: 'tel:+919876543210',
+    value: '+91 99717 49689',
+    href: 'tel:+9199717496890',
   },
 ]
 
