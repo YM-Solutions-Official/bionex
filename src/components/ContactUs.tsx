@@ -25,7 +25,7 @@ export default function ContactUs() {
             <ContactItem
               icon={<Mail className="h-5 w-5" />}
               title="Email us"
-              detail="contact@projectbionex.com"
+              detail="official.bionex@gmail.com"
             />
             <ContactItem
               icon={<Phone className="h-5 w-5" />}

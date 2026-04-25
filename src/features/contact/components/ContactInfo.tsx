@@ -29,7 +29,7 @@ export function ContactInfo() {
         <ContactItem
           icon={Mail}
           title="Email us"
-          detail="contact@projectbionex.com"
+          detail="official.bionex@gmail.com"
         />
         <ContactItem icon={Phone} title="Call us" detail="+91 99717 49689" />
         <ContactItem

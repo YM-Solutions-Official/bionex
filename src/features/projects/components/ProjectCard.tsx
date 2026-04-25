@@ -23,11 +23,11 @@ export default function ProjectCard({
 }: ProjectCardProps) {
   return (
     <article className="group w-92.5 relative max-sm:w-[90%] h-105 rounded-2xl border border-gray-200 overflow-hidden bg-card shadow-sm hover:shadow-md hover:-translate-y-1 transition duration-500">
-      <div className="relative h-54 overflow-hidden">
+      <div className="relative h-54 overflow-hidden bg-linear-to-br from-slate-950 via-emerald-950 to-slate-900">
         <img
           src={image || '/placeholder.svg'}
           alt={`${title} - Featured biotech project showcasing precision engineering`}
-          className="h-full w-full object-fill object-center group-hover:scale-105 transition-transform"
+          className="h-full w-full object-contain object-center p-8 group-hover:scale-105 transition-transform"
           width={400}
           height={250}
         />
@@ -53,7 +53,7 @@ export default function ProjectCard({
 
         <div className="absolute bottom-0 left-0 rounded-tr-2xl px-6 py-2 text-white bg-emerald-600 translate-y-full group-hover:translate-y-0 transition duration-400">
           <Link to={link} className="inline-flex items-center text-sm">
-            View Live <ArrowUpRight className="ml-1 h-3 w-3" />
+            Click React <ArrowUpRight className="ml-1 h-3 w-3" />
           </Link>
         </div>
       </div>

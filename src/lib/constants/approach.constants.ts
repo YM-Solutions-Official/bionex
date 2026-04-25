@@ -3,7 +3,14 @@
  * @description Approach steps and strategy constants
  */
 
-import { Cpu, FlaskConical, Lightbulb, Rocket, Users } from 'lucide-react'
+import {
+  Bot,
+  Cpu,
+  Lightbulb,
+  Rocket,
+  ScanLine,
+  Users,
+} from 'lucide-react'
 import type { ApproachStep, CTAButton, WayAheadCard } from '@/lib/types'
 
 export const APPROACH_STEPS: Array<ApproachStep> = [
@@ -32,16 +39,24 @@ export const APPROACH_STEPS: Array<ApproachStep> = [
 
 export const WAY_AHEAD_CARDS: Array<WayAheadCard> = [
   {
+    icon: Bot,
+    title: 'AI Bioreactors',
+    description:
+      'AI-guided bioreactor workflows for smarter monitoring and process decisions.',
+    color: 'text-emerald-600',
+  },
+  {
     icon: Cpu,
-    title: 'Nanobiotechnology',
-    description: 'Atomic-scale engineering of medical delivery systems.',
+    title: 'Bioprocess Software',
+    description:
+      'Software tools for lab automation, data tracking, and smarter bioprocess control.',
     color: 'text-purple-600',
   },
   {
-    icon: FlaskConical,
-    title: 'Exobiology',
+    icon: ScanLine,
+    title: 'Photo React',
     description:
-      'Searching for the chemical and physical signatures of life beyond Earth.',
+      'Laser-enabled photoreaction technology for precision semiconductor fabrication.',
     color: 'text-teal-600',
   },
 ]

@@ -33,7 +33,7 @@ export function generateOrganizationSchema() {
       '@type': 'ContactPoint',
       telephone: '+91-99717-49689',
       contactType: 'Customer Support',
-      email: 'contact@projectbionex.com',
+      email: 'official.bionex@gmail.com',
     },
   }
 }
@@ -103,7 +103,7 @@ export function generateLocalBusinessSchema() {
       addressCountry: 'IN',
     },
     telephone: '+91-99717-49689',
-    email: 'contact@projectbionex.com',
+    email: 'official.bionex@gmail.com',
     url: 'https://bionex.com',
     priceRange: '$$',
   }

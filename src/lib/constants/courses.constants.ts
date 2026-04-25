@@ -3,26 +3,25 @@
  * @description Learning and course constants
  */
 
-import { BarChart3, PenTool, Table, Wrench } from 'lucide-react'
+import { Bot, Code2, Dna, Wrench } from 'lucide-react'
 import type { CourseItem } from '@/lib/types'
 
 export const COURSES_DATA: Array<CourseItem> = [
   {
-    icon: BarChart3,
+    icon: Code2,
     bg: 'bg-blue-50',
-    title: 'Statistical Thermodynamics',
-    description:
-      'The bridge between microscopic physics and macroscopic chemistry.',
+    title: 'Python',
+    description: 'Practical programming for scientific and biotech workflows.',
     list: [
-      'Entropy & Information Theory',
-      'Boltzmann Distributions',
-      'Molecular Heat Transfer',
+      'Python fundamentals',
+      'Data handling for labs',
+      'Automation-ready scripts',
     ],
   },
   {
     icon: Wrench,
     bg: 'bg-orange-50',
-    title: 'Analytical Chemistry',
+    title: 'Analytics Chemistry',
     description: 'Mastering the tools required to measure the material world.',
     list: [
       'Mass Spectrometry Basics',
@@ -31,25 +30,25 @@ export const COURSES_DATA: Array<CourseItem> = [
     ],
   },
   {
-    icon: PenTool,
+    icon: Dna,
     bg: 'bg-purple-50',
-    title: 'Genomic Engineering',
-    description: 'The physical manipulation of biological blueprints.',
+    title: 'Synthetic Biology',
+    description: 'Connecting biological systems with practical lab design.',
     list: [
-      'CRISPR-Cas9 Mechanics',
-      'DNA Folding & Topology',
-      'Synthetic Biology Design',
+      'Biological system basics',
+      'Cell culture concepts',
+      'Bioprocess design links',
     ],
   },
   {
-    icon: Table,
+    icon: Bot,
     bg: 'bg-emerald-50',
-    title: 'Scientific Computing',
-    description: 'Using Python and Julia to solve complex physical equations.',
+    title: 'AI Integration',
+    description: 'Applying AI tools to speed up research and operations.',
     list: [
-      'NumPy for Scientists',
-      'Differential Equations in Bio',
-      'Modeling Atomic Bonds',
+      'Prompting for research',
+      'AI-assisted data review',
+      'Workflow integration',
     ],
   },
 ]

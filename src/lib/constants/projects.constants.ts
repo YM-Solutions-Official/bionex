@@ -7,27 +7,27 @@ import type { ProjectItem } from '@/lib/types'
 
 export const PROJECTS_DATA: Array<ProjectItem> = [
   {
-    title: 'Project Photosynthesis 2.0',
+    title: 'Bioreact',
     description:
-      'Applying quantum physics to increase photon absorption efficiency in synthetic chloroplasts.',
-    image: '/images/project-1.webp',
-    tags: ['Biophysics', 'Quantum Science', 'Botany'],
+      'A smart bioreactor concept focused on controlled growth, monitoring, and process reliability.',
+    image: '/icons/bioreactor-design.png',
+    tags: ['Bioreactor', 'Automation', 'AI'],
     link: '#',
   },
   {
-    title: 'ChemiCompute Alpha',
+    title: 'Photo React',
     description:
-      'A cloud platform for simulating complex organic chemical reactions before wet-lab testing.',
-    image: '/images/project-2.webp',
-    tags: ['Chemistry', 'SaaS', 'Computation'],
+      'A photobioreaction workflow for light-driven experiments and responsive lab control.',
+    image: '/icons/bioprocess-analysis.png',
+    tags: ['Photoreaction', 'Chemistry', 'Control'],
     link: '#',
   },
   {
-    title: 'Bio-Crystal X-Ray',
+    title: 'Click React',
     description:
-      'Advanced crystallography imaging to map the physical structure of unknown viral proteins.',
-    image: '/images/project-3.webp',
-    tags: ['Physics', 'Virology', 'Imaging'],
+      'A click-reaction project designed for faster synthesis planning and experiment tracking.',
+    image: '/icons/automation.png',
+    tags: ['Click Chemistry', 'Synthesis', 'Tracking'],
     link: '#',
   },
 ]

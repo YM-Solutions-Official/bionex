@@ -26,8 +26,8 @@ export const FOOTER_CONTACT_INFO: Array<ContactInfo> = [
   },
   {
     icon: Mail,
-    value: 'contact@projecctbionex.com',
-    href: 'mailto:contact@projecctbionex.com',
+    value: 'official.bionex@gmail.com',
+    href: 'mailto:official.bionex@gmail.com',
   },
   {
     icon: Phone,

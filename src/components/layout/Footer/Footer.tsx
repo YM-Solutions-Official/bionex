@@ -10,8 +10,6 @@ import {
 } from '@/lib/constants/footer.constants'
 
 export default function Footer() {
-  const year = new Date().getFullYear()
-
   return (
     <footer className="w-full border-t border-slate-200 bg-white text-slate-800 font-sans">
       {/* Top label line -->
@@ -92,54 +90,6 @@ export default function Footer() {
               ))}
             </address>
           </section>
-        </div>
-      </div>
-
-      {/* Bottom bar */}
-      <div className="border-t border-slate-200 bg-white py-6">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <div className="grid grid-cols-1 items-center gap-4 md:grid-cols-3">
-            {/* 1. Copyright - Left */}
-            <div className="text-center text-xs text-slate-400 md:text-left">
-              © {year} <span className="text-slate-600">BioNex Systems</span>
-            </div>
-
-            {/* 2. Agency Credit - Center */}
-            <div className="flex justify-center items-center gap-2">
-              <div className="h-px w-4 bg-slate-200" />
-              <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-300">
-                Designed by{' '}
-                <a
-                  href="https://www.ymsolutions.in/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-slate-900 hover:text-emerald-600 transition-colors"
-                  aria-label="YM Solutions website"
-                >
-                  YM Solutions
-                </a>
-              </p>
-              <div className="h-px w-4 bg-slate-200" />
-            </div>
-
-            {/* 3. Legal Links - Right */}
-            <nav className="flex justify-center gap-6 text-xs font-medium text-slate-500 md:justify-end">
-              <a
-                href="/service"
-                className="transition-all hover:text-emerald-600"
-                aria-label="Terms of service"
-              >
-                Terms
-              </a>
-              <a
-                href="/privacy"
-                className="transition-all hover:text-emerald-600"
-                aria-label="Privacy policy"
-              >
-                Privacy
-              </a>
-            </nav>
-          </div>
         </div>
       </div>
     </footer>

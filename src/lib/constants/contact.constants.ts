@@ -9,7 +9,7 @@ export const CONTACT_METHODS: Array<ContactMethod> = [
   {
     icon: '📩',
     title: 'Email us at',
-    detail: 'contact@projectbbionex.com',
+    detail: 'official.bionex@gmail.com',
   },
   {
     icon: '📞',
