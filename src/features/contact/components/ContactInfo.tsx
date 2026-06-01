@@ -4,7 +4,7 @@
  */
 
 import { CheckCircle2, Mail, MapPin, Phone } from 'lucide-react'
-import { CONTACT_REASONS } from '@/lib/constants/contact.constants'
+import { CONTACT_EMAIL, CONTACT_REASONS } from '@/lib/constants/contact.constants'
 import { Card } from '@/components/ui'
 
 /**
@@ -26,11 +26,7 @@ export function ContactInfo() {
       </div>
 
       <div className="space-y-5">
-        <ContactItem
-          icon={Mail}
-          title="Email us"
-          detail="official.bionex@gmail.com"
-        />
+        <ContactItem icon={Mail} title="Email us" detail={CONTACT_EMAIL} />
         <ContactItem icon={Phone} title="Call us" detail="+91 99717 49689" />
         <ContactItem
           icon={MapPin}

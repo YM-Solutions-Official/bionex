@@ -13,6 +13,7 @@ export const PROJECTS_DATA: Array<ProjectItem> = [
     image: '/icons/bioreactor-design.png',
     tags: ['Bioreactor', 'Automation', 'AI'],
     link: '#',
+    actionLabel:"Click Bioreact" 
   },
   {
     title: 'Photo React',
@@ -21,6 +22,7 @@ export const PROJECTS_DATA: Array<ProjectItem> = [
     image: '/icons/bioprocess-analysis.png',
     tags: ['Photoreaction', 'Chemistry', 'Control'],
     link: '#',
+    actionLabel:"Click Photo React"
   },
   {
     title: 'Click React',
@@ -29,5 +31,6 @@ export const PROJECTS_DATA: Array<ProjectItem> = [
     image: '/icons/automation.png',
     tags: ['Click Chemistry', 'Synthesis', 'Tracking'],
     link: '#',
+    actionLabel:"Click React"
   },
 ]

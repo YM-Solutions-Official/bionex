@@ -3,17 +3,27 @@
  * @description Contact form with validation
  */
 
+import type { ComponentPropsWithoutRef } from 'react'
 import { Input } from '@/components/ui'
 import { CONTACT_SERVICE_OPTIONS } from '@/lib/constants/contact.constants'
 import { useContactForm } from '@/lib/hooks'
 
 export function ContactForm() {
-  const { formData, errors, isSubmitting, updateField, submit } =
-    useContactForm()
+  const {
+    formData,
+    errors,
+    isSubmitting,
+    submitStatus,
+    submitMessage,
+    updateField,
+    submit,
+  } = useContactForm()
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit: NonNullable<
+    ComponentPropsWithoutRef<'form'>['onSubmit']
+  > = async (e) => {
     e.preventDefault()
-    submit()
+    await submit()
   }
 
   return (
@@ -23,7 +33,7 @@ export function ContactForm() {
     >
       <div className="mb-5 space-y-1.5">
         <h1 className="text-lg font-semibold text-slate-900 sm:text-xl">
-          Tell us about your project
+          Contact for Collaboration and future opportunities.
         </h1>
         <p className="text-sm text-slate-500 sm:text-sm">
           Fill out the form and our team will get back to you within one
@@ -58,7 +68,11 @@ export function ContactForm() {
         <select
           value={formData.service}
           onChange={(e) => updateField('service', e.target.value)}
-          className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 outline-none transition-all focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200"
+          className={`w-full rounded-xl border bg-white px-4 py-3 text-sm text-slate-700 outline-none transition-all focus:ring-2 ${
+            errors.service
+              ? 'border-red-500 focus:border-red-500 focus:ring-red-200'
+              : 'border-slate-200 focus:border-emerald-500 focus:ring-emerald-200'
+          }`}
         >
           {CONTACT_SERVICE_OPTIONS.map((option) => (
             <option key={option} value={option}>
@@ -66,14 +80,24 @@ export function ContactForm() {
             </option>
           ))}
         </select>
+        {errors.service && (
+          <p className="-mt-3 text-sm text-red-600">{errors.service}</p>
+        )}
 
         <textarea
           rows={4}
           placeholder="Tell us about your project, timelines and any technical constraints..."
           value={formData.message}
           onChange={(e) => updateField('message', e.target.value)}
-          className="w-full resize-none rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 outline-none transition-all focus:border-emerald-500 focus:ring-2 focus:ring-emerald-200"
+          className={`w-full resize-none rounded-xl border bg-white px-4 py-3 text-sm text-slate-700 outline-none transition-all focus:ring-2 ${
+            errors.message
+              ? 'border-red-500 focus:border-red-500 focus:ring-red-200'
+              : 'border-slate-200 focus:border-emerald-500 focus:ring-emerald-200'
+          }`}
         />
+        {errors.message && (
+          <p className="-mt-3 text-sm text-red-600">{errors.message}</p>
+        )}
 
         <div className="mt-1 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <button
@@ -87,6 +111,18 @@ export function ContactForm() {
             By submitting, you agree to our terms and privacy policy.
           </p>
         </div>
+
+        {submitMessage && (
+          <p
+            className={`rounded-xl px-4 py-3 text-sm font-medium ${
+              submitStatus === 'success'
+                ? 'bg-emerald-50 text-emerald-700'
+                : 'bg-red-50 text-red-700'
+            }`}
+          >
+            {submitMessage}
+          </p>
+        )}
       </div>
     </form>
   )

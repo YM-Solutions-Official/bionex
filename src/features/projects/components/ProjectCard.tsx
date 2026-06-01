@@ -12,6 +12,7 @@ interface ProjectCardProps {
   image: string
   tags: Array<string>
   link: string
+  actionLabel: string
 }
 
 export default function ProjectCard({
@@ -20,6 +21,7 @@ export default function ProjectCard({
   image,
   tags,
   link,
+  actionLabel,
 }: ProjectCardProps) {
   return (
     <article className="group w-92.5 relative max-sm:w-[90%] h-105 rounded-2xl border border-gray-200 overflow-hidden bg-card shadow-sm hover:shadow-md hover:-translate-y-1 transition duration-500">
@@ -53,7 +55,7 @@ export default function ProjectCard({
 
         <div className="absolute bottom-0 left-0 rounded-tr-2xl px-6 py-2 text-white bg-emerald-600 translate-y-full group-hover:translate-y-0 transition duration-400">
           <Link to={link} className="inline-flex items-center text-sm">
-            Click React <ArrowUpRight className="ml-1 h-3 w-3" />
+            {actionLabel} <ArrowUpRight className="ml-1 h-3 w-3" />
           </Link>
         </div>
       </div>

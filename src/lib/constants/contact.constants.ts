@@ -5,11 +5,13 @@
 
 import type { ContactMethod, FormField } from '@/lib/types'
 
+export const CONTACT_EMAIL = 'official.bionex@gmail.com'
+
 export const CONTACT_METHODS: Array<ContactMethod> = [
   {
     icon: '📩',
     title: 'Email us at',
-    detail: 'official.bionex@gmail.com',
+    detail: CONTACT_EMAIL,
   },
   {
     icon: '📞',

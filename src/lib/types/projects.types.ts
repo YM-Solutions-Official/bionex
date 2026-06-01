@@ -9,4 +9,5 @@ export interface ProjectItem {
   image: string
   tags: Array<string>
   link: string
+  actionLabel: string
 }
