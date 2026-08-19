@@ -6,9 +6,9 @@
 import {
   Bot,
   Cpu,
+  FlaskConical,
   Lightbulb,
   Rocket,
-  ScanLine,
   Users,
 } from 'lucide-react'
 import type { ApproachStep, CTAButton, WayAheadCard } from '@/lib/types'
@@ -20,43 +20,28 @@ export const APPROACH_STEPS: Array<ApproachStep> = [
     description:
       'Identifying variables and establishing scientific questions through interdisciplinary peer review.',
     color: 'bg-blue-600',
-  },
-  {
-    icon: Lightbulb,
-    title: 'Synthesize',
-    description:
-      'Merging Physics, Chemistry, and Biology to create a unified experimental model.',
-    color: 'bg-emerald-600',
-  },
-  {
-    icon: Rocket,
-    title: 'Discover',
-    description:
-      'Finalizing peer-reviewed data and publishing breakthroughs for the global scientific community.',
-    color: 'bg-purple-600',
-  },
+  }
 ]
 
 export const WAY_AHEAD_CARDS: Array<WayAheadCard> = [
   {
     icon: Bot,
-    title: 'AI Bioreactors',
+    title: 'Bioreact with AI',
     description:
       'AI-guided bioreactor workflows for smarter monitoring and process decisions.',
     color: 'text-emerald-600',
   },
   {
     icon: Cpu,
-    title: 'Bioprocess Software',
-    description:
-      'Software tools for lab automation, data tracking, and smarter bioprocess control.',
+    title: 'Nanobiotechnology',
+    description: 'Atomic-scale engineering of medical delivery systems.',
     color: 'text-purple-600',
   },
   {
-    icon: ScanLine,
-    title: 'Photo React',
+    icon: FlaskConical,
+    title: 'Exobiology',
     description:
-      'Laser-enabled photoreaction technology for precision semiconductor fabrication.',
+      'Searching for the chemical and physical signatures of life beyond Earth.',
     color: 'text-teal-600',
   },
 ]

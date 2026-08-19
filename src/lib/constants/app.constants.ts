@@ -12,6 +12,7 @@ export const APP_CONFIG = {
 export const NAVIGATION_LINKS = [
   { to: '/about', label: 'About' },
   { to: '/services', label: 'Services' },
+  { to: '/infrareact', label: 'infrareact' },
   { to: '/projects', label: 'Projects' },
   { to: '/contact', label: 'Contact' },
 ]

@@ -22,6 +22,7 @@ function RootLayout() {
     if (pathname === '/services') return 'services'
     if (pathname === '/projects') return 'projects'
     if (pathname === '/contact') return 'contact'
+    if (pathname === '/infrareact') return 'infrareact'
     return 'home'
   }
 
@@ -31,7 +32,7 @@ function RootLayout() {
 
   // Only inject metadata for known pages
   const metadata = (
-    ['home', 'about', 'services', 'projects', 'contact'] as const
+    ['home', 'about', 'services', 'projects', 'contact', 'infrareact'] as const
   ).includes(metadataKey)
     ? getPageMetadata(metadataKey)
     : null
