@@ -7,8 +7,6 @@ import {
   Bot,
   Cpu,
   FlaskConical,
-  Lightbulb,
-  Rocket,
   Users,
 } from 'lucide-react'
 import type { ApproachStep, CTAButton, WayAheadCard } from '@/lib/types'
