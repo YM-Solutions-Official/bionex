@@ -801,7 +801,7 @@ function VineetPortfolioPage() {
 
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <a
-              href="mailto:vineet8115722137@gmail.com"
+              href="mailto:infrareact@projectbionex.com"
               className="group flex items-center gap-3 rounded-full bg-cyan-400 px-7 py-4 font-semibold text-black transition hover:bg-cyan-300"
             >
               Email Us
