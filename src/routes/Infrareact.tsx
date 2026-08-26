@@ -633,7 +633,7 @@ function VineetPortfolioPage() {
             </h2>
           </div>
 
-          <div className="grid gap-5 sm:grid-cols-3">
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             <div className="border border-black/15 p-6">
               <div className="text-3xl font-semibold">PLVA</div>
 
@@ -655,6 +655,22 @@ function VineetPortfolioPage() {
 
               <p className="mt-3 text-sm leading-6 text-black/60">
                 Non-destructive testing and structural assessment support.
+              </p>
+            </div>
+
+            <div className="border border-black/15 p-6">
+              <div className="text-3xl font-semibold">BFS</div>
+
+              <p className="mt-3 text-sm leading-6 text-black/60">
+                Foundation strengthening detailing and structural support.
+              </p>
+            </div>
+
+            <div className="border border-black/15 p-6">
+              <div className="text-3xl font-semibold">NB</div>
+
+              <p className="mt-3 text-sm leading-6 text-black/60">
+                New-build structural drafting and technical documentation.
               </p>
             </div>
           </div>
